@@ -8,3 +8,5 @@ body.prepend(newEl);
 // body.append(newEl); 
 // body.after(newEl); 
 // body.before(newEl); 
+
+// newEl.remove();         // use is REMOVE ELEMENT
