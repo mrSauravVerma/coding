@@ -13,7 +13,7 @@ let evt3 = () => {
 }
 para.addEventListener("click",evt3);
 
-para.addEventListener("click",() => {
+para.addEventListener("dblclick",() => {
     console.log(`this is click event with EventListener-4`);
 });
 
