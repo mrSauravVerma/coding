@@ -41,7 +41,7 @@ body {
     scale: 1.03;
 }
 
-.rst_btn{
+.rst_btn, .new_btn{
     height: 10vmin;
     width: 25vw;
     font-size: 4vmin;
@@ -51,17 +51,25 @@ body {
     border-radius: 15px;   
 }
 
-.rst_btn:hover{
+.rst_btn, .new_btn:hover{
     box-shadow: 0 0 1rem rgb(149, 255, 0);
     transition: 0.1s;
     scale: 1.1;
 }
 
-.new_btn{
+.msg{
+    margin: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#game_draw, #win_msg-X, #win_msg-Y{
     height: 9vmin;
-    width: 22vw;
-    font-size: 3.5vmin;
-    color: blue;
-    background-color: black;
-    border-radius: 15px;  
+    width: 100vw;
+    font-size: 35px;
+    border-radius: 30px;
+    color: rgb(14, 214, 14);
+    background-color: white;
 }

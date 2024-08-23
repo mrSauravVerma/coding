@@ -1,6 +1,7 @@
 let boxes = document.querySelectorAll(".boxes");
-let resetBtn = document.querySelector("#reset-btn");
-let newGameBtn = document.querySelector("#new-btn");
+let resetBtn = document.querySelector(".rst_btn");
+let newGameBtn = document.querySelector(".new_btn");
+let msg = document.querySelectorAll(".Msg");
 
 const winPatterns = [
     [0, 1, 2],
@@ -13,13 +14,28 @@ const winPatterns = [
     [6, 7, 8],
 ];
 
+newGameBtn.hidden = true;
 let turnO = true;
+
+const hideMsg = () => {
+    for (let m of msg) {
+        m.hidden = true;
+    }
+}
+
+hideMsg();
 
 const resetGame = () => {
     turnO = true;
+    newGameBtn.hidden = true;
+    resetBtn.hidden = false;
     enableBoxes();
+    hideMsg();
+    count = 0;
 };
 
+
+let count = 0;
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turnO) {
@@ -31,6 +47,14 @@ boxes.forEach((box) => {
             box.innerText = "X";
             turnO = true;
         }
+        
+        count++;
+        if (count == 9) {
+            msg[2].hidden = false;
+            newGameBtn.hidden = false;
+            resetBtn.hidden = true;
+        }
+        
         checkWinner();
         box.disabled = true;
     });
@@ -42,14 +66,25 @@ const checkWinner = () => {
         let pos2Val = boxes[pattern[1]].innerText;
         let pos3Val = boxes[pattern[2]].innerText;
 
-        if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
-            if (pos1Val === pos2Val && pos2Val === pos3Val) {
-                console.log(`winner is ${pos1Val}`);
-
+        if (pos1Val != "" && pos1Val === pos2Val && pos2Val === pos3Val) {
+            msg[2].hidden = true;   // hidde draw msg
+            if (pos3Val === "X") {
+                msg[0].hidden = true;  // X wins
             }
+            else {
+                msg[1].hidden = false;  // O wins
+            }
+            disableBoxes();
+            break;
         }
     }
 };
+
+const disableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+}
 
 const enableBoxes = () => {
     for (let box of boxes) {
@@ -59,3 +94,4 @@ const enableBoxes = () => {
 };
 
 resetBtn.addEventListener("click", resetGame);
+newGameBtn.addEventListener("click", resetGame);  
