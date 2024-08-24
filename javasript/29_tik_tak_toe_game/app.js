@@ -24,6 +24,7 @@ const hideMsg = () => {
 }
 
 hideMsg();
+msg[1].style.color = "yellow";
 
 const resetGame = () => {
     turnO = true;
@@ -34,7 +35,6 @@ const resetGame = () => {
     count = 0;
 };
 
-
 let count = 0;
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
@@ -42,19 +42,21 @@ boxes.forEach((box) => {
             //playerO
             box.innerText = "O";
             turnO = false;
+            box.style.color = "yellow";  // give yellow color for O 
         } else {
             //playerX
             box.innerText = "X";
+            box.style.color = "aqua";  // give yellow color for X 
             turnO = true;
         }
-        
+
         count++;
         if (count == 9) {
             msg[2].hidden = false;
             newGameBtn.hidden = false;
             resetBtn.hidden = true;
         }
-        
+
         checkWinner();
         box.disabled = true;
     });
@@ -69,7 +71,7 @@ const checkWinner = () => {
         if (pos1Val != "" && pos1Val === pos2Val && pos2Val === pos3Val) {
             msg[2].hidden = true;   // hidde draw msg
             if (pos3Val === "X") {
-                msg[0].hidden = true;  // X wins
+                msg[0].hidden = false;  // X wins
             }
             else {
                 msg[1].hidden = false;  // O wins
