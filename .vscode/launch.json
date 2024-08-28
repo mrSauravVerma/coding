@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BoxLayout_24",
+            "request": "launch",
+            "mainClass": "collage.BoxLayout_24",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "BorderLayoutExample_21",
+            "request": "launch",
+            "mainClass": "collage.BorderLayoutExample_21",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "MouseListenerExample_20",
+            "request": "launch",
+            "mainClass": "collage.MouseListenerExample_20",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "BackgroundColorChange_19",
+            "request": "launch",
+            "mainClass": "collage.BackgroundColorChange_19",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "Calculator_18",
+            "request": "launch",
+            "mainClass": "collage.Calculator_18",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "RegistrationForm_17",
+            "request": "launch",
+            "mainClass": "collage.RegistrationForm_17",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "AWTControlsExample_16",
+            "request": "launch",
+            "mainClass": "collage.AWTControlsExample_16",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
             "name": "Interface_9",
             "request": "launch",
             "mainClass": "collage.Interface_9",

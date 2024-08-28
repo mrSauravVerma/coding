@@ -16,7 +16,7 @@ class Circle implements Drawable {
     }
 }
 
-public class Interface_9 {
+public class program_9 {
     public static void main(String[] args) {
         Drawable rect = new Rectangle();
         rect.draw(); // Calls Rectangle's draw method

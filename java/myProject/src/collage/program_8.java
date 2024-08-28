@@ -12,7 +12,7 @@ class Dog extends Animal {
     }
 }
 
-public class SingleLevelInheritance_8 {
+public class program_8 {
     public static void main(String[] args) {
         Dog dog = new Dog();
         dog.eat();  // Method from Animal class

@@ -1,6 +1,6 @@
 package collage;
 
-public class StringMethodsExample_7 {
+public class StringMethods_7 {
     public static void main(String[] args) {
         String str1 = "HelloWorld";
         String str2 = "     hello";

@@ -2,7 +2,7 @@ package collage;
 
 import java.util.Vector;
 
-public class VectorExample_6 {
+public class Vector_6 {
     public static void main(String[] args) {
         Vector<Integer> vector = new Vector<>();
 
