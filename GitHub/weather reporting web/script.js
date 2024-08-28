@@ -35,8 +35,8 @@ async function weatherCheck(city) {
                 icon.src = "images/night-cloud.png";
             } else if (data.weather[0].main === "Rain") {
                 icon.src = "images/night-rain.png";
-            } else {
-                icon.src = "images/night.png"; // Fallback for unknown night conditions
+            } else{
+                icon.src = "images/night-.png"; // Fallback for unknown night conditions
             }
         } else {
             if (data.weather[0].main === "Clouds") {
