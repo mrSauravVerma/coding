@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Interface_9",
+            "request": "launch",
+            "mainClass": "collage.Interface_9",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "SingleLevelInheritance_8",
+            "request": "launch",
+            "mainClass": "collage.SingleLevelInheritance_8",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "ArrayExample_5",
+            "request": "launch",
+            "mainClass": "collage.ArrayExample_5",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "LargestNumber_3",
+            "request": "launch",
+            "mainClass": "collage.LargestNumber_3",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "G_StringMethodsExample_7",
+            "request": "launch",
+            "mainClass": "collage.G_StringMethodsExample_7",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "F_VectorExample_6",
+            "request": "launch",
+            "mainClass": "collage.F_VectorExample_6",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "E_ArrayExample_5",
+            "request": "launch",
+            "mainClass": "collage.E_ArrayExample_5",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "D_MultiplicationTable_4",
+            "request": "launch",
+            "mainClass": "collage.D_MultiplicationTable_4",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "UserInput",
+            "request": "launch",
+            "mainClass": "collage.UserInput",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "list_1",
+            "request": "launch",
+            "mainClass": "collage.list_1",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "myClass",
+            "request": "launch",
+            "mainClass": "myPackage.myClass",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
             "name": "firstProgram",
             "request": "launch",
             "mainClass": "myPackage.firstProgram",
