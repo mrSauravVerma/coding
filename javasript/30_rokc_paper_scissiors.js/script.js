@@ -2,24 +2,32 @@ let rock = document.querySelector("#rock");
 let paper = document.querySelector("#paper");
 let scissior = document.querySelector("#scissior");
 let msg = document.querySelector(".Msg");
+let you_s = document.querySelector("#you-s");
+let computer_s = document.querySelector("#compter-s");
 
 let you_value;
 let comp_value;
+let winner;
+let y = 0;
+let c = 0;
 
-const showMsg = () =>{
-    if (winner === "rock") {
-        msg.innerText = "winner is rock";
+const showMsg = () => {
+    if (winner === "you") {
+        msg.innerText = "winner is you";
+        y++;
+        you_s.innerText = y;
     }
-    if (winner === "paper") {
-        msg.innerText = "winner is paper";
+    else if (winner === "draw") {
+        msg.innerText = "match is draw";
     }
-    if (winner === "scissor") {
-        msg.innerText = "winner is scissor";
+    else {
+        msg.innerText = "winner is computer";
+        c++;
+        computer_s.innerText = c;
     }
 }
 
 const check_winner = () => {
-    let winner;
     console.log("c_v = ", comp_value);
     console.log("y_v = ", you_value);
 
@@ -30,7 +38,7 @@ const check_winner = () => {
         if (comp_value === "c") {
             winner = "you";
         }
-        else{
+        else {
             winner = "computer";
         }
     }
@@ -38,7 +46,7 @@ const check_winner = () => {
         if (comp_value === "r") {
             winner = "you";
         }
-        else{
+        else {
             winner = "computer";
         }
     }
@@ -46,7 +54,7 @@ const check_winner = () => {
         if (comp_value === "p") {
             winner = "you";
         }
-        else{
+        else {
             winner = "computer";
         }
     }
@@ -54,18 +62,6 @@ const check_winner = () => {
     showMsg();
 }
 
-const r = () => {
-    you_value = "r";
-    Comp_value();
-}
-const p = () => {
-    you_value = "p";
-    Comp_value();
-}
-const s = () => {
-    you_value = "s";
-    Comp_value();
-}
 
 const Comp_value = () => {
     let c_v = Math.floor(Math.random() * 3);
@@ -79,6 +75,18 @@ const Comp_value = () => {
         comp_value = "p";
     }
     check_winner();
+}
+const r = () => {
+    you_value = "r";
+    Comp_value();
+}
+const p = () => {
+    you_value = "p";
+    Comp_value();
+}
+const s = () => {
+    you_value = "s";
+    Comp_value();
 }
 
 

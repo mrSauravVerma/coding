@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MultiplicationTable_4",
+            "request": "launch",
+            "mainClass": "collage.MultiplicationTable_4",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "StringMethods_7",
+            "request": "launch",
+            "mainClass": "collage.StringMethods_7",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "Vector_6",
+            "request": "launch",
+            "mainClass": "collage.Vector_6",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "UserInput_2",
+            "request": "launch",
+            "mainClass": "collage.UserInput_2",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
+            "name": "hello_1",
+            "request": "launch",
+            "mainClass": "collage.hello_1",
+            "projectName": "myProject"
+        },
+        {
+            "type": "java",
             "name": "BoxLayout_24",
             "request": "launch",
             "mainClass": "collage.BoxLayout_24",
