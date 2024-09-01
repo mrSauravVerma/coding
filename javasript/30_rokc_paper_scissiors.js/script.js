@@ -11,20 +11,22 @@ let winner;
 let y = 0;
 let c = 0;
 
+// Assuming winner is being set somewhere in your code
 const showMsg = () => {
+    // Check if winner is defined and assigned a value
     if (winner === "you") {
         msg.innerText = "winner is you";
         y++;
-        you_s.innerText = y;
-    }
+        you_s.innerText = y; // Update the score for "you"
+    } 
     else if (winner === "draw") {
         msg.innerText = "match is draw";
-    }
-    else {
+    } 
+    else if (winner === "computer") { // Ensure this matches the condition you're checking for
         msg.innerText = "winner is computer";
         c++;
-        computer_s.innerText = c;
-    }
+        computer_s.innerText = c; // Update the score for "computer"
+    } 
 }
 
 const check_winner = () => {
