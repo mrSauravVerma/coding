@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.main {
+    display: flex;
+    background-color: black;
+}
+
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+
+.main-contant {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 0.2rem;
+}
+
+.player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 72px;
+    width: 100%;
+    margin: 0px;
+}
+
+.nav {
+    background-color: #121212;
+    height: 5rem;
+    border-radius: 0.8rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 0.8rem;
+    margin-top: 0.5rem;
+}
