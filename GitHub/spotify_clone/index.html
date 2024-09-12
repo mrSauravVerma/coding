@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>spotify - web player: music everyone</title>
 </head>
 
@@ -15,27 +18,68 @@
     <div class="main">
         <div class="sidebar">
 
-            <div class="nav">
-                <div class="home">
-                    <icon></icon>
-                    <p>Home</p>
+            <div class="sidebar-nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
                 </div>
-
-                <div class="search">
-                    <icon></icon>
-                    <p>search</p>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
                 </div>
             </div>
 
-            <div class="library">library
-                <p>Your Library Content Here</p>
+            <div class="library">
+
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="./images/library_icon.png">
+                        <a href="#">Your library</a>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="box box1">Create your first playlist</p>
+                    <p class="box box2">it's easy, we'll help you</p>
+                    <div class="badge">Create playlist</div>
+                </div>
+                <div class="lib-box">
+                    <p class="box box1">Let's find some prodcasts to follows</p>
+                    <p class="box box2">we'll keep you updated on new episodes</p>
+                    <div class="badge">Browes prodcasts</div>
+                </div>
+
             </div>
-
-
         </div>
-        <div class="main-contant">main-contant</div>
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <div class="main-contant">
+            <div class="main-nav">
 
-        <div class="player">palyer</div>
+                <div class="main-nav-icon">
+                    <img src="./images/backward_icon.png" alt="backward_icon">
+                    <img src="./images/forward_icon.png" alt="forward_icon" class="hide">
+                </div>
+
+                <div class="main-nav-badge">
+                    <div class="badge hide">Explore premium</div>
+                    <div class="badge dark-badge">
+                        <i class="fa-solid fa-download" style="color: black;"></i>
+                        Instll App
+                    </div>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+            </div>
+            <div class="cards">
+
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
+        <div class="media-player">palyer</div>
     </div>
 
 </body>
