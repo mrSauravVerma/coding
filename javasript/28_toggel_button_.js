@@ -5,10 +5,10 @@ body.append(newBtn);
 
 let event = newBtn.onclick = () => {
     let body = document.querySelector("body");
-    if (body.style.backgroundColor === "white"){
+    if (body.style.backgroundColor === "white") {
         body.style.backgroundColor = "black";
     }
-    else{
+    else {
         body.style.backgroundColor = "white";
     }
 }
