@@ -1,7 +1,13 @@
+let a = 4, b = 3;
+
 const multiFun = (a, b) => {
     c = a * b;
-    console.log(c);
+    console.log(`${a} * ${b} = ${c}`);
     return 0;
 }
 
-multiFun(3, 2);
+multiFun(a, b);
+
+const addFun = (a, b) => (a + b);  // retrun value with out RETURN keyword 
+
+console.log(`${a} + ${b} = ${addFun(a, b)}`);
