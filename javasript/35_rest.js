@@ -1,4 +1,5 @@
 // Rest Operator Collects multiple elements into a single array or object.
+// rest is the opposite of spread
 
 let test = (msg, ...nums) => {
     console.log(`msg is : ${msg}`);
