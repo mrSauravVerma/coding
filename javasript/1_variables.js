@@ -18,3 +18,4 @@
     // num = "30";        -------->    throw error
     console.log( num );
 }
+///////////----
