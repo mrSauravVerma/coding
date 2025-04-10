@@ -5,9 +5,9 @@ if(num >= 0 && num <=10){
         console.log("you select the correct number.")
     }
     else{
-        console.log("you loss plese try agine.")
+        console.log("you select the wrong number, try again.")
     }
 }
 else{
-    console.log("you select uncorret number.")
+    console.log("you select uncorret number. choose number between 0-10.");
 }
