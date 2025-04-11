@@ -23,8 +23,10 @@ do {
 //   for of loop      use for vairables
 console.log("  for of loop");
 let str = "saurav";
+let index = 0;
 for (let i of str) {
-    console.log("i = ", i);
+    console.log(`Index of string [${index}] : ${i}`);
+    index++;
 }
 
 //   for in loop      use for objects and array
@@ -34,7 +36,6 @@ let bioData = {
     rollNumber: 23,
     allPass: true
 }
-
 for (let key in bioData) {
     console.log("key : ", key, "      value : ", bioData[key]);
 }
