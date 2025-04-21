@@ -1,7 +1,15 @@
-let str="Apple";
-if ( str[0] == 'a' || str[0] == 'A' ) {
-    console.log("the string is a golden string");
+let arr=[23,453,232,56,34,787];
+let i=0;
+for(const price of arr){
+    arr[i]=price-(price*(10/100));
+    console.log(`the real price : ${price}`);
+    console.log(`price after calculate discount : ${arr[i]}`);
+    i++;
 }
-else{
-    console.log("the string is not a golden string");
-}
+// let arr = [23, 453, 232, 56, 34, 787];
+// let i = 0;
+// for (const price of arr) {
+//     arr[i] = price - price * 0.10;
+//     console.log(`price after calculate discount : ${arr[i]}`);
+//     i++;
+// }

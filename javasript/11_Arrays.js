@@ -1,4 +1,4 @@
-let vari = ["a", "b", "c", "d", "e"];
+let vari = ["a", "b", "c", "d", "e"];  // Array first
 vari.push("new", "2_new");
 console.log(`push method : ${vari}`);
 
@@ -6,7 +6,7 @@ let rValue = vari.pop();
 console.log(`deleted char : ${rValue}`);
 console.log(`pop method : ${vari}`);
 
-let num = [1, 2, 3, 4, 5];
+let num = [1, 2, 3, 4, 5]; // Array second
 console.log(num);
 console.log("toString convert Array data in string :", num.toString());
 
