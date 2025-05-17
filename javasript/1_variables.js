@@ -6,8 +6,6 @@
 }
 
 {
-    let num = "10"; //       LET
-    // let num = "20"; ------>   throw error
     num = "30";
     console.log(`print by let : ${num}`);
 }
@@ -19,3 +17,4 @@
     console.log(`print by const : ${num}`);
 }
 ///////////----
+
