@@ -17,12 +17,13 @@ body {
     height: 100vh;
     margin: 40px auto;
     padding: 20px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 30px;
 }
 
 .top-bar {
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,8 +43,8 @@ input[type="text"] {
     font-size: 16px;
 }
 
-.toggle-darkmode,
-.location-btn {
+#darkModeToggle,
+#getWeatherBtn{
     background-color: #444;
     padding: 12px 20px;
     border-radius: 10px;
@@ -53,7 +54,7 @@ input[type="text"] {
     font-weight: bold;
 }
 
-.location-btn {
+.rearch-btn {
     background-color: #1fd655;
     color: #000;
 }
@@ -66,20 +67,35 @@ input[type="text"] {
 
 .card {
     background-color: #2c2c2c;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
     /* flex: 1; */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card_time {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     width: 40%;
+    padding: 3rem;
+    text-align: center;
 }
 .card_info {
     width: 60%;
+    padding: 2rem;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
 }
-.card.center {
-    text-align: center;
+
+.card.days{
+    width: 55%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.card.hourly {
+    width: 45%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .title {

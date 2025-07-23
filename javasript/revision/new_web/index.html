@@ -1,84 +1,142 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javasript</title>
-</head>
-
-<body style="background-color: black;">
-    <h1 style="color: rgb(6, 173, 6);">this code is javasrpit code</h1>
-
-    <div id="ID">
-        <p saurav="newClass" class="CLASS" style="color: rgb(6, 173, 6); ">this is the div. </p>
-    </div>
-    <script src="first_file.js"></script>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <!-- header of web -->
-    <div class="container">
-        <div class="top-bar">
-            <div class="toggle-darkmode">Dark Mode</div>
-            <div class="search-box">
-                <input type="text" placeholder="Search for your preferred city...">
-            </div>
-            <div class="location-btn">Get Weather</div>
-        </div>
-        <!-- main part of web -->
-        <div class="section">
-            <div class="card center card_time">
-                <div class="title">Athens</div>
-                <div class="time">09:03</div>
-                <div class="weather-info">Thursday, 31 Aug</div>
-            </div>
-            <div class="card card_info">
-                <div class="weather-info">75&deg;F (Feels like: 22&deg;C)</div>
-                <div class="weather-icon">☀️ Sunny</div>
-                <div class="weather-info">🌅 Sunrise: 06:37 AM</div>
-                <div class="weather-info">🌇 Sunset: 20:37 PM</div>
-                <div class="weather-info">💧 Humidity: 41%</div>
-                <div class="weather-info">🌬 Wind: 2 km/h</div>
-                <div class="weather-info">🔵 Pressure: 997 hPa</div>
-                <div class="weather-info">🌞 UV: 8</div>
-            </div>
-        </div>
-        <!-- footer of web -->
-        <div class="section">
-            <div class="card days">
-                <div class="title">5 Days Forecast:</div>
-                <div class="forecast">
-                    <div class="card">🌤<br>20&deg;C<br>Fri, 1 Sep</div>
-                    <div class="card">☀️<br>22&deg;C<br>Sat, 2 Sep</div>
-                    <div class="card">☀️<br>27&deg;C<br>Sun, 3 Sep</div>
-                    <div class="card">🌧<br>18&deg;C<br>Mon, 4 Sep</div>
-                    <div class="card">🌨<br>16&deg;C<br>Tue, 5 Sep</div>
-                </div>
-            </div>
-            <div class="card Hourly">
-                <div class="title">Hourly Forecast:</div>
-                <div class="forecast">
-                    <div class="card">12:00<br>☀️<br>26&deg;C<br>3km/h</div>
-                    <div class="card">15:00<br>☀️<br>27&deg;C<br>2km/h</div>
-                    <div class="card">18:00<br>⛅<br>27&deg;C<br>2km/h</div>
-                    <div class="card">21:00<br>⛅<br>25&deg;C<br>3km/h</div>
-                    <div class="card">00:00<br>☀️<br>22&deg;C<br>3km/h</div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="top-bar">
+      <button id="darkModeToggle">Dark Mode</button>
+      <div class="search-box">
+        <input id="cityInput" type="text" placeholder="Search for your preferred city...">
+      </div>
+      <button id="getWeatherBtn">Get Weather</button>
     </div>
+
+    <div class="section">
+      <div class="card center card_time">
+        <div id="cityName" class="title">City</div>
+        <div id="currentTime" class="time">--:--</div>
+        <div id="currentDate" class="weather-info">Day, Date</div>
+      </div>
+      <div class="card card_info">
+        <div id="tempInfo" class="weather-info"></div>
+        <div id="weatherIcon" class="weather-icon"></div>
+        <div id="sunrise" class="weather-info"></div>
+        <div id="sunset" class="weather-info"></div>
+        <div id="humidity" class="weather-info"></div>
+        <div id="wind" class="weather-info"></div>
+        <div id="pressure" class="weather-info"></div>
+        <div id="uv" class="weather-info"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card days">
+        <div class="title">7 Days Forecast:</div>
+        <div id="forecastDays" class="forecast"></div>
+      </div>
+      <div class="card Hourly">
+        <div class="title">Hourly Forecast:</div>
+        <div id="forecastHours" class="forecast"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    let forecastWeatherURL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
+    let apiKey = "8e9b8ae1b4e404c6fa759657ff494dec";
+
+    document.getElementById("getWeatherBtn").addEventListener("click", () => {
+      let city = document.getElementById("cityInput").value.trim();
+      if (city !== "") {
+        getWeather(city);
+      }
+    });
+
+    async function getWeather(city) {
+      try {
+        let res = await fetch(currentWeatherURL + city + `&appid=${apiKey}`);
+        let data = await res.json();
+
+        document.getElementById("cityName").textContent = data.name;
+        document.getElementById("currentTime").textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        document.getElementById("currentDate").textContent = new Date().toDateString();
+
+        document.getElementById("tempInfo").innerHTML = `${data.main.temp}&deg;C (Feels like: ${data.main.feels_like}&deg;C)`;
+        document.getElementById("weatherIcon").innerHTML = `${getWeatherEmoji(data.weather[0].main)} ${data.weather[0].main}`;
+        document.getElementById("sunrise").textContent = `🌅 Sunrise: ${formatTime(data.sys.sunrise)}`;
+        document.getElementById("sunset").textContent = `🌇 Sunset: ${formatTime(data.sys.sunset)}`;
+        document.getElementById("humidity").textContent = `💧 Humidity: ${data.main.humidity}%`;
+        document.getElementById("wind").textContent = `🌬 Wind: ${data.wind.speed} km/h`;
+        document.getElementById("pressure").textContent = `🔵 Pressure: ${data.main.pressure} hPa`;
+        document.getElementById("uv").textContent = `🌞 UV: --`;
+
+        fetchForecast(city);
+      } catch (err) {
+        alert("City not found. Please try again.");
+        console.error(err);
+      }
+    }
+
+    async function fetchForecast(city) {
+      try {
+        let res = await fetch(forecastWeatherURL + city + `&appid=${apiKey}`);
+        let data = await res.json();
+
+        const daily = document.getElementById("forecastDays");
+        daily.innerHTML = "";
+
+        const hourly = document.getElementById("forecastHours");
+        hourly.innerHTML = "";
+
+        const usedDays = new Set();
+        for (let i = 0; i < data.list.length; i++) {
+          let item = data.list[i];
+          let date = new Date(item.dt * 1000);
+
+          if (i < 5) {
+            hourly.innerHTML += `
+              <div class="card">${date.getHours()}:00<br>${getWeatherEmoji(item.weather[0].main)}<br>${item.main.temp}&deg;C<br>${item.wind.speed}km/h</div>`;
+          }
+
+          let day = date.toDateString();
+          if (!usedDays.has(day) && usedDays.size < 7) {
+            usedDays.add(day);
+            daily.innerHTML += `
+              <div class="card">${getWeatherEmoji(item.weather[0].main)}<br>${item.main.temp}&deg;C<br>${day.slice(0, 3)}, ${date.getDate()} ${date.toLocaleString('default', { month: 'short' })}</div>`;
+          }
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    function getWeatherEmoji(condition) {
+      switch (condition.toLowerCase()) {
+        case "clear": return "☀️";
+        case "clouds": return "☁️";
+        case "rain": return "🌧";
+        case "snow": return "🌨";
+        case "thunderstorm": return "⛈";
+        case "drizzle": return "🌦";
+        case "mist":
+        case "fog": return "🌫";
+        default: return "🌈";
+      }
+    }
+
+    function formatTime(unix) {
+      let date = new Date(unix * 1000);
+      return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+  </script>
 </body>
 
 </html>
