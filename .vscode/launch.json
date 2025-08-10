@@ -6,6 +6,54 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LargestNumber_3",
+            "request": "launch",
+            "mainClass": "LargestNumber_3",
+            "projectName": "collage"
+        },
+        {
+            "type": "java",
+            "name": "firstProgram",
+            "request": "launch",
+            "mainClass": "myPackage.firstProgram",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "myClass",
+            "request": "launch",
+            "mainClass": "myPackage.myClass",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": ""
+        },
+        {
+            "name": "(gdb) Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "java",
             "name": "MultiplicationTable_4",
             "request": "launch",
             "mainClass": "collage.MultiplicationTable_4",
