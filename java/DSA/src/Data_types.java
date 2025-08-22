@@ -9,7 +9,7 @@ public class Data_types {
         long bigNum = 123456789L;
         byte e = 10;
         short Sn = 1000;
-        
+
         System.out.println("Integer: " + a);
         System.out.println("Float: " + b);
         System.out.println("Character: " + c);
