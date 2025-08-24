@@ -1,4 +1,4 @@
-public class Data_types {
+public class Data_types_4 {
     public static void main(String[] args) {
         int a = 5;
         float b = 5.5f;
