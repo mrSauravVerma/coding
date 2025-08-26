@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "type_casting_9",
+            "request": "launch",
+            "mainClass": "type_casting_9",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "area_of_circle_8",
+            "request": "launch",
+            "mainClass": "area_of_circle_8",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "LargestNumber_3",
             "request": "launch",
             "mainClass": "LargestNumber_3",
