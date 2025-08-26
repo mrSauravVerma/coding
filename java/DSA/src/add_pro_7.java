@@ -6,6 +6,7 @@ public class add_pro_7 {
         int b = s.nextInt();
         int sum = a+b;
         System.out.println("the sum of a and b is " + sum);
+        s.close();
     }
     
 }

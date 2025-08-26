@@ -6,5 +6,6 @@ public class Value_input_6 {
         String name = sc.next();
         // String name = sc.nextLine(); nextLine use for input more than one word
         System.out.println("my name is " + name);
+        sc.close();
     }
 }
