@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bill_pro_10",
+            "request": "launch",
+            "mainClass": "bill_pro_10",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Variables_3",
+            "request": "launch",
+            "mainClass": "Variables_3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "type_casting_9",
             "request": "launch",
             "mainClass": "type_casting_9",
