@@ -1,4 +1,4 @@
-class type_casting_9 {
+public class type_casting_9 {
     public static void main(String[] args) {
         int num = 10;
         float num2 = num; // implicit casting
@@ -20,7 +20,7 @@ class type_casting_9 {
         float f = 20.20f;
         double d = 30.30;
 
-        System.out.println("type of result:" + ((Object) ((f * b) + (i % 'C') - (d * sh))).getClass().getSimpleName());
+        System.out.println("type of result:" + ((Object) ((f * b) + (i % c) - (d * sh))).getClass().getSimpleName());
         // System.out.println(" find type:" + ((Object) obj ).getClass().getSimpleName() );
     }
 }

@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "assignment_op_14",
+            "request": "launch",
+            "mainClass": "assignment_op_14",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "logical_op_13",
+            "request": "launch",
+            "mainClass": "logical_op_13",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "uniary_op_12",
+            "request": "launch",
+            "mainClass": "uniary_op_12",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "uniry_op_12",
+            "request": "launch",
+            "mainClass": "uniry_op_12",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "arithmatic_op_11",
+            "request": "launch",
+            "mainClass": "arithmatic_op_11",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "print_pattern_2",
+            "request": "launch",
+            "mainClass": "print_pattern_2",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Data_types_4",
+            "request": "launch",
+            "mainClass": "Data_types_4",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Value_input_6",
+            "request": "launch",
+            "mainClass": "Value_input_6",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "hello_pro_1",
+            "request": "launch",
+            "mainClass": "hello_pro_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "bill_pro_10",
             "request": "launch",
             "mainClass": "bill_pro_10",
