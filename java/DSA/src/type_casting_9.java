@@ -12,5 +12,15 @@ class type_casting_9 {
         // short size data type to long size data type directly.
         System.out.println("this is implicit casting : " + num2);
         System.out.println("this is explicit casting : " + num4);
+
+        byte b = 10;
+        char c = 'c';
+        short sh = 150;
+        int i = 100;
+        float f = 20.20f;
+        double d = 30.30;
+
+        System.out.println("type of result:" + ((Object) ((f * b) + (i % 'C') - (d * sh))).getClass().getSimpleName());
+        // System.out.println(" find type:" + ((Object) obj ).getClass().getSimpleName() );
     }
 }
