@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "average_of_3num_16",
+            "request": "launch",
+            "mainClass": "average_of_3num_16",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "if_else_15",
+            "request": "launch",
+            "mainClass": "if_else_15",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "assignment_op_14",
             "request": "launch",
             "mainClass": "assignment_op_14",
