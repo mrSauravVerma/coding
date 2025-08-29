@@ -1,5 +1,5 @@
 import java.util.*;
-public class calculater_17 {
+public class calculator_17 {
     public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
     System.out.println("enter a : ");
