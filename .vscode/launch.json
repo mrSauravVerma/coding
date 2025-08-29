@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sumOf_N_num_18",
+            "request": "launch",
+            "mainClass": "sumOf_N_num_18",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "calculater_17",
             "request": "launch",
             "mainClass": "calculater_17",
