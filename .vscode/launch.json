@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "reverce_number_20",
+            "request": "launch",
+            "mainClass": "reverce_number_20",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "square_pattern_19",
+            "request": "launch",
+            "mainClass": "square_pattern_19",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "sumOf_N_num_18",
             "request": "launch",
             "mainClass": "sumOf_N_num_18",

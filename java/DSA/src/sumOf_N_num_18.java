@@ -5,9 +5,9 @@ public class sumOf_N_num_18 {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter any N number :");
         int n = sc.nextInt();
-        int i = 0, sum = 1;
-        while (i < n) {
-            sum += i;//sum = sum + i;
+        int i = 1, sum = 0;
+        while (i <= n) {
+            sum += i;// sum = sum + i;
             ++i;
         }
         System.out.print("sum of natural N numbers :" + sum);
