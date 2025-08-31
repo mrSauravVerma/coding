@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrimeCheck",
+            "request": "launch",
+            "mainClass": "PrimeCheck",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "prime_num_23",
+            "request": "launch",
+            "mainClass": "prime_num_23",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "continue_statment_22",
             "request": "launch",
             "mainClass": "continue_statment_22",
