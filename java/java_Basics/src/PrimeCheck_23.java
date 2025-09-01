@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PrimeCheck {
+public class PrimeCheck_23 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the any number :");
