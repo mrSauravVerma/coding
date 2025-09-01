@@ -8,7 +8,7 @@ public class PrimeCheck {
         boolean isPrime = true;
 
         if (n <= 1) {
-            isPrime = false;
+            isPrime = true;
         } else {
             for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) {
@@ -18,7 +18,7 @@ public class PrimeCheck {
             }
         }
 
-        if (isPrime) {
+        if (isPrime==true) {
             System.out.println("'YES' this is a prime number.");
         } else {
             System.out.println("'NO' this is not a prime number.");
