@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "return_fun_3",
+            "request": "launch",
+            "mainClass": "function.return_fun_3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "with_argu_2",
+            "request": "launch",
+            "mainClass": "with_argu_2",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "void_fun_1",
             "request": "launch",
             "mainClass": "function.void_fun_1",
