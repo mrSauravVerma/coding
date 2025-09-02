@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "void_fun_1",
+            "request": "launch",
+            "mainClass": "function.void_fun_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "num_pattern_25",
             "request": "launch",
             "mainClass": "num_pattern_25",
