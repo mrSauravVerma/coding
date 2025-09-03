@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bionomial_cofficient_5",
+            "request": "launch",
+            "mainClass": "function.bionomial_cofficient_5",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "all_in1_4",
             "request": "launch",
             "mainClass": "function.all_in1_4",
