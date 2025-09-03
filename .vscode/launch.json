@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "all_in1_4",
+            "request": "launch",
+            "mainClass": "function.all_in1_4",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "return_fun_3",
             "request": "launch",
             "mainClass": "function.return_fun_3",
