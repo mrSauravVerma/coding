@@ -1,7 +1,7 @@
 package function;
 
 // function overloading by changing the data type of parameter
-public class fun_overloading_type {
+public class fun_overloading_type_7 {
     public static void fun(int x) {
         System.out.println("(fun 1)with int para fun.  x = " + x);
     }

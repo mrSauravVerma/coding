@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "range_primeCheck_26",
+            "request": "launch",
+            "mainClass": "range_primeCheck_26",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "fun_overloading_type",
             "request": "launch",
             "mainClass": "function.fun_overloading_type",
