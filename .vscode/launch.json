@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "fun_overloading_para_6",
+            "request": "launch",
+            "mainClass": "function.fun_overloading_para_6",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "bionomial_cofficient_5",
             "request": "launch",
             "mainClass": "function.bionomial_cofficient_5",
