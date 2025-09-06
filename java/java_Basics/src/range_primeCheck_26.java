@@ -1,10 +1,13 @@
 import java.util.*;
 
+// Program to print all prime numbers in a given range
 public class range_primeCheck_26 {
 
     public static boolean checkPrime(int n) {
-        if (n < 2) return false;
-        if (n == 2) return true;
+        if (n < 2)
+            return false;
+        if (n == 2)
+            return true;
 
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
@@ -22,7 +25,7 @@ public class range_primeCheck_26 {
             }
         }
     }
-
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the range (start and end): ");
