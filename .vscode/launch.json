@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Declaration_arr_1",
+            "request": "launch",
+            "mainClass": "array.Declaration_arr_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "range_primeCheck_26",
             "request": "launch",
             "mainClass": "range_primeCheck_26",
