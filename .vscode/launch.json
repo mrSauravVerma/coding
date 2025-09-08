@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "runTime_inputARR",
+            "request": "launch",
+            "mainClass": "array.runTime_inputARR",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Declaration_arr_1",
             "request": "launch",
             "mainClass": "array.Declaration_arr_1",
