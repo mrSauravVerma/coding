@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "twoD_array_3",
+            "request": "launch",
+            "mainClass": "array.twoD_array_3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "runTime_inputARR",
             "request": "launch",
             "mainClass": "array.runTime_inputARR",
