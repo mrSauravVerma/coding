@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "binary_to_decimal_27",
+            "request": "launch",
+            "mainClass": "binary_to_decimal_27",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "twoD_array_3",
             "request": "launch",
             "mainClass": "array.twoD_array_3",
