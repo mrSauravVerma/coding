@@ -6,6 +6,7 @@ public class binary_to_decimal_27 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a binary number: ");
         int binaryNumber = sc.nextInt();
+        sc.close();
         int temp = binaryNumber;
         boolean isValid = false;
         while (temp > 0) {
@@ -29,7 +30,6 @@ public class binary_to_decimal_27 {
             }
 
             System.out.println("Decimal equivalent: " + decimalNumber);
-            sc.close();
         }
     }
 }
