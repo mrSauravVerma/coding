@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class try1 {
+public class zTRY {
 
     public static void convert(int deciNum) {
         int pow = 0;
         int ans =0;
         while (deciNum > 0) {
             int lastDigit = deciNum % 10;
-            ans += lastDigit * (int)Math.pow(lastDigit, pow);
+            ans += lastDigit * (int)Math.pow(2, pow);
             deciNum /= 10;
             pow++;
         }
