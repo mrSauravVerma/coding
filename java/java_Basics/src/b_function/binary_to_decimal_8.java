@@ -1,4 +1,4 @@
-package c_function;
+package b_function;
 import java.util.*;
 
 // Program to convert binary number to decimal number

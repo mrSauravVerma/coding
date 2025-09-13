@@ -1,4 +1,4 @@
-package b_array;
+package c_array;
 // run time input of array program
 import java.util.*;
 

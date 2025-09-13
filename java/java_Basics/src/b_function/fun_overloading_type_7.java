@@ -1,4 +1,4 @@
-package c_function;
+package b_function;
 
 // function overloading by changing the data type of parameter
 public class fun_overloading_type_7 {
