@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "decimal_to_binary_9",
+            "request": "launch",
+            "mainClass": "c_function.decimal_to_binary_9",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "binary_to_decimal_8",
+            "request": "launch",
+            "mainClass": "c_function.binary_to_decimal_8",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "try1",
             "request": "launch",
             "mainClass": "try1",
