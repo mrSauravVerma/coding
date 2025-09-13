@@ -1,4 +1,4 @@
-package function;
+package a_function;
  class fun_overloading_para_6 {
 
     public static void fun(){

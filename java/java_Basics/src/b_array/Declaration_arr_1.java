@@ -1,4 +1,4 @@
-package array;
+package b_array;
 
 public class Declaration_arr_1 {
     public static void main(String[] args) {

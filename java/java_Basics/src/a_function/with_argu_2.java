@@ -1,4 +1,4 @@
-package function;
+package a_function;
 
 import java.util.*;
 

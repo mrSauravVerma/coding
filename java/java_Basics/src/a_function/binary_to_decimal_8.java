@@ -1,7 +1,8 @@
+package a_function;
 import java.util.*;
 
 // Program to convert binary number to decimal number
-public class binary_to_decimal_27 {
+public class binary_to_decimal_8 {
 
     public static boolean checkNumber(int temp) {
         while (temp > 0) {

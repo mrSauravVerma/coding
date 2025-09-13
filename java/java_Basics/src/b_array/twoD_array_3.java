@@ -1,4 +1,4 @@
-package array;
+package b_array;
 
 // Program to take input in 2D array and display it
 import java.util.*;
