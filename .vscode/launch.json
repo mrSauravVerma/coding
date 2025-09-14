@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "hollow_square_10",
+            "request": "launch",
+            "mainClass": "b_function.hollow_square_10",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "decimal_to_binary_9",
+            "request": "launch",
+            "mainClass": "b_function.decimal_to_binary_9",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "decimal_to_binary_9",
             "request": "launch",
             "mainClass": "c_function.decimal_to_binary_9",
