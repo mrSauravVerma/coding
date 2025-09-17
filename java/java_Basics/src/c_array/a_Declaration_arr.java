@@ -1,6 +1,6 @@
 package c_array;
 
-public class Declaration_arr_1 {
+public class a_Declaration_arr {
     public static void main(String[] args) {
         // Declaration and initialization of an array
         int[] arr =new  int[3];

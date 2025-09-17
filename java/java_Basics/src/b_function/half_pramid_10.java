@@ -1,6 +1,6 @@
 package b_function;
 
-public class half_pramid {
+public class half_pramid_10 {
 
     public static void star_half_pramid(int n) {
         System.out.print("inverted and rotated star printed helf-pramid");

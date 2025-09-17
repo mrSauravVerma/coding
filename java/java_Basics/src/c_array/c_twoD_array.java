@@ -3,7 +3,7 @@ package c_array;
 // Program to take input in 2D array and display it
 import java.util.*;
 
-public class twoD_array_3 {
+public class c_twoD_array {
 
     public static void enterValues(int arr[][]) {
         Scanner sc = new Scanner(System.in);

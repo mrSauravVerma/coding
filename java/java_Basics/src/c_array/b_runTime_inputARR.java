@@ -2,7 +2,7 @@ package c_array;
 // run time input of array program
 import java.util.*;
 
-public class runTime_inputARR_2 {
+public class b_runTime_inputARR {
 
     public static void forInputFun(int s, int arr[]) {
         Scanner sc = new Scanner(System.in);

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "half_pramid_2_11",
+            "request": "launch",
+            "mainClass": "b_function.half_pramid_2_11",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "half_pramid",
             "request": "launch",
             "mainClass": "b_function.half_pramid",
