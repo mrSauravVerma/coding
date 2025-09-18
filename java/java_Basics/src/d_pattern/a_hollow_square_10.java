@@ -1,4 +1,4 @@
-package b_function;
+package d_pattern;
 
 // Write a program to print hollow square pattern of * using function.
 import java.util.*;

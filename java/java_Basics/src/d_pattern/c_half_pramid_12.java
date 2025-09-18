@@ -1,4 +1,4 @@
-package b_function;
+package d_pattern;
 
 public class c_half_pramid_12 {
     public static void half_pattern(int n) {

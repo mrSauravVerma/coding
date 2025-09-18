@@ -1,4 +1,4 @@
-package b_function;
+package d_pattern;
 
 import java.util.*;
 

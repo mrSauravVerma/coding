@@ -1,4 +1,4 @@
-package b_function;
+package d_pattern;
 
 public class b_half_pramid_11 {
 

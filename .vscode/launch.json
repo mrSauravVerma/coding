@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "e_0_and_1triangle",
+            "request": "launch",
+            "mainClass": "d_pattern.e_0_and_1triangle",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "zTRY",
+            "request": "launch",
+            "mainClass": "zTRY",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "d_floyd_triangle",
             "request": "launch",
             "mainClass": "b_function.d_floyd_triangle",
