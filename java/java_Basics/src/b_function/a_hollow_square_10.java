@@ -3,7 +3,7 @@ package b_function;
 // Write a program to print hollow square pattern of * using function.
 import java.util.*;
 
-public class hollow_square_10 {
+public class a_hollow_square_10 {
 
     public static void printPattern(int raw, int col) {
         for (int i = 1; i <= raw; i++) {

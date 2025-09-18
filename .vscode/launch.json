@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "c_half_pramid_12",
+            "request": "launch",
+            "mainClass": "b_function.c_half_pramid_12",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "b_half_pramid_11",
+            "request": "launch",
+            "mainClass": "b_function.b_half_pramid_11",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "a_hollow_square_10",
+            "request": "launch",
+            "mainClass": "b_function.a_hollow_square_10",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "half_pramid_2_11",
             "request": "launch",
             "mainClass": "b_function.half_pramid_2_11",

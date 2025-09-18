@@ -1,6 +1,6 @@
 package b_function;
 
-public class half_pramid_2_11 {
+public class c_half_pramid_12 {
     public static void half_pattern(int n) {
         System.out.print("half number pattern");
         for (int i = 1; i <= n; i++) {
