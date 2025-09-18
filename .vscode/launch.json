@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "d_floyd_triangle",
+            "request": "launch",
+            "mainClass": "b_function.d_floyd_triangle",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "d_floyd_triangle_xxxxx",
+            "request": "launch",
+            "mainClass": "b_function.d_floyd_triangle_xxxxx",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "d_floyd_triangle_13",
+            "request": "launch",
+            "mainClass": "b_function.d_floyd_triangle_13",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "c_half_pramid_12",
             "request": "launch",
             "mainClass": "b_function.c_half_pramid_12",
