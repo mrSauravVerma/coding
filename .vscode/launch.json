@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "f_butterfly_patter",
+            "request": "launch",
+            "mainClass": "d_pattern.f_butterfly_patter",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "e_0_and_1triangle",
             "request": "launch",
             "mainClass": "d_pattern.e_0_and_1triangle",
