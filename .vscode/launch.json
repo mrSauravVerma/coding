@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "d_linear_search",
+            "request": "launch",
+            "mainClass": "c_array.d_linear_search",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "f_butterfly_pattern",
+            "request": "launch",
+            "mainClass": "d_pattern.f_butterfly_pattern",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "f_butterfly_patter",
             "request": "launch",
             "mainClass": "d_pattern.f_butterfly_patter",
