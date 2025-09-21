@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "twoD_array",
+            "request": "launch",
+            "mainClass": "twoD_array",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "linear_search",
+            "request": "launch",
+            "mainClass": "linear_search",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "d_linear_search",
             "request": "launch",
             "mainClass": "c_array.d_linear_search",
