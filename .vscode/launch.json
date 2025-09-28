@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "prac",
+            "request": "launch",
+            "mainClass": "prac",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "twoD_array",
             "request": "launch",
             "mainClass": "twoD_array",
