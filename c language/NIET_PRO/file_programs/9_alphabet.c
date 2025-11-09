@@ -6,11 +6,11 @@ int main()
     scanf("%c", &ch);
     if (('a' <= ch && 'z' >= ch) || ('A' <= ch && 'Z' >= ch))
     {
-        printf("%c ia alphabet",ch);
+        printf("%c ia alphabet", ch);
     }
     else
     {
-        printf("%c is not a alphabet.",ch);
+        printf("%c is not a alphabet.", ch);
     }
     return 0;
 }
