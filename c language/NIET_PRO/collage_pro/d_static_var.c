@@ -6,7 +6,7 @@ void fun_count();
 
 void fun_count()
 {
-    int count = 0;
+    static int count = 0;
     count++; // static variable
     printf("value of count in 1st function : %d \n", count);
 }
