@@ -1,16 +1,25 @@
 #include <stdio.h>
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    int i, num;
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int i, num, size;
+
+    printf("Enter the size of array : ");
+    scanf("%d", &size);
+    int arr[size];
+
+    for (i = 0; i < size; i++)
+    {
+        printf("Enter arr[%d] : ",i);
+        scanf("%d", &arr[i]);
+    }
+
     printf("Enter the number to search : ");
     scanf("%d", &num);
     for (i = 0; i < size; i++)
     {
         if (arr[i] == num)
         {
-            printf("%d find of index %d in array.", num, arr[i-1]);
+            printf("%d find of index %d in array.", num,i);
             break;
         }
     }
