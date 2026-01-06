@@ -9,7 +9,7 @@ int main()
     scanf("%d", &n3);
     scanf("%d", &n4);
     scanf("%d", &n5);
-    avg = (n1 + n2 + n3 + n4 + n5) / 5;
-    printf("average of numbers : %f", avg);
+    avg = (n1 + n2 + n3 + n4 + n5) / 5.0;
+    printf("average of five number : %.2f", avg);
     return 0;
 }
