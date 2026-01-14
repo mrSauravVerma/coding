@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Data_types_4",
+            "request": "launch",
+            "mainClass": "a_basics.Data_types_4",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "prac",
             "request": "launch",
             "mainClass": "prac",

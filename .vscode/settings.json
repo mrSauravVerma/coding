@@ -5,6 +5,7 @@
     "C_Cpp.errorSquiggles": "enabled",
     "java.project.sourcePaths": [
         "java/java_Basics/src",
-        "java/DSA/A_array"
+        "java/DSA/A_array",
+        "java/NIET_JAVApro"
     ]
 }
