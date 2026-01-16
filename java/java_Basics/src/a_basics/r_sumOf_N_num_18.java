@@ -1,0 +1,19 @@
+package a_basics;
+import java.util.*;
+
+public class r_sumOf_N_num_18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any N number :");
+        int n = sc.nextInt();
+        int i = 1, sum = 0;
+        while (i <= n) {
+            sum += i;// sum = sum + i;
+            ++i;
+        }
+        System.out.print("sum of natural N numbers :" + sum);
+        sc.close();
+    }
+}
+//abcdefghijklmnopqrstuvwxyz
+//12345678901234567890123456
