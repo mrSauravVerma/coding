@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "a_hello_pro_1",
+            "request": "launch",
+            "mainClass": "a_basics.a_hello_pro_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "b_print_pattern_2",
+            "request": "launch",
+            "mainClass": "a_basics.b_print_pattern_2",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "q_calculator_17",
+            "request": "launch",
+            "mainClass": "a_basics.q_calculator_17",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "a_void_fun_1",
+            "request": "launch",
+            "mainClass": "b_function.a_void_fun_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "d_Data_types_4",
+            "request": "launch",
+            "mainClass": "a_basics.d_Data_types_4",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "c_Variables_3",
+            "request": "launch",
+            "mainClass": "a_basics.c_Variables_3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "hello_world",
+            "request": "launch",
+            "mainClass": "hello_world",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Data_types_4",
             "request": "launch",
             "mainClass": "a_basics.Data_types_4",

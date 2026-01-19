@@ -6,7 +6,7 @@
     "java.project.sourcePaths": [
         "java/java_Basics/src",
         "java/DSA/A_array",
-        "java/NIET_JAVApro"
+        "java/JAVA_PROniet/src"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
