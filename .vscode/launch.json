@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "d_Take_input",
+            "request": "launch",
+            "mainClass": "d_Take_input",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "c_Addition",
+            "request": "launch",
+            "mainClass": "c_Addition",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "b_print_var",
+            "request": "launch",
+            "mainClass": "b_print_var",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "a_hello_pro_1",
             "request": "launch",
             "mainClass": "a_basics.a_hello_pro_1",
