@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "e_dataTypes",
+            "request": "launch",
+            "mainClass": "e_dataTypes",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "d_Take_input",
             "request": "launch",
             "mainClass": "d_Take_input",
