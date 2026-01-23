@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "g_function",
+            "request": "launch",
+            "mainClass": "g_function",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "f_typeCasting",
             "request": "launch",
             "mainClass": "f_typeCasting",
