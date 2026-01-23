@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "f_typeCasting",
+            "request": "launch",
+            "mainClass": "f_typeCasting",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "i_type_casting_9",
+            "request": "launch",
+            "mainClass": "a_basics.i_type_casting_9",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "e_dataTypes",
             "request": "launch",
             "mainClass": "e_dataTypes",
