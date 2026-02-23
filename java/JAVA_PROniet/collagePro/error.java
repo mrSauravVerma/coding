@@ -1,7 +1,7 @@
 // DSA programs
 // program 4
 
-class Main {
+class error{
     public static void main(String[] args) {
         int arr[] = {1,9,3,4,5};
         int check = 0;

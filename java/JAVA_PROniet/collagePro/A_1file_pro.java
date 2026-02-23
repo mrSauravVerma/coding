@@ -1,7 +1,7 @@
 // DSA programs
 // program 1
 
-class Main {
+class A_1file_pro {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5};
         int count=0;

@@ -5,8 +5,9 @@
     "C_Cpp.errorSquiggles": "enabled",
     "java.project.sourcePaths": [
         "java/java_Basics/src",
+        "java/JAVA_PROniet/src",
         "java/DSA/A_array",
-        "java/JAVA_PROniet/src"
+        "java/JAVA_PROniet/collagePro"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
