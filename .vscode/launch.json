@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "D_file_pro",
+            "request": "launch",
+            "mainClass": "D_file_pro",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "error",
             "request": "launch",
             "mainClass": "error",
