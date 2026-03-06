@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_9",
+            "request": "launch",
+            "mainClass": "Q_9",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "first",
+            "request": "launch",
+            "mainClass": "first",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "D_file_pro",
             "request": "launch",
             "mainClass": "D_file_pro",
