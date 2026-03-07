@@ -7,9 +7,10 @@
         "java/java_Basics/src",
         "java/JAVA_PROniet/src",
         "java/JAVA_PROniet/collagePro",
+        "java/DSA/leetcode",
         "java/DSA/collage _DSA",
         "java/DSA/A_array",
-        "java/DSA/leetcode"
+        "java/java_advance/src"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

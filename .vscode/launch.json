@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "A_classes_obj",
+            "request": "launch",
+            "mainClass": "A_classes_obj",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_9",
             "request": "launch",
             "mainClass": "Q_9",
