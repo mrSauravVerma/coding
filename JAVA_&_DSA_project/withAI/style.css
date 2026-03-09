@@ -1,0 +1,106 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:15px 40px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#4a6cf7;
+}
+
+.menu a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    margin-top:40px;
+}
+
+.hero h1{
+    color:#3b4a6b;
+}
+
+.hero p{
+    color:#6c7a89;
+}
+
+/* Feature Cards */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:200px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:60px;
+}
+
+.card h3{
+    margin-top:10px;
+}
+
+/* Courses */
+
+.courses{
+    text-align:center;
+    margin-top:60px;
+}
+
+.course-list{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.course{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    width:260px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.course img{
+    width:100%;
+}
+
+.course button{
+    margin:15px;
+    padding:10px 15px;
+    background:#4a6cf7;
+    border:none;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}

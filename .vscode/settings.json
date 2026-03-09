@@ -4,13 +4,14 @@
     },
     "C_Cpp.errorSquiggles": "enabled",
     "java.project.sourcePaths": [
+        "java/java_advance/src",
         "java/java_Basics/src",
         "java/JAVA_PROniet/src",
         "java/JAVA_PROniet/collagePro",
         "java/DSA/leetcode",
         "java/DSA/collage _DSA",
         "java/DSA/A_array",
-        "java/java_advance/src"
+        "JAVA_&_DSA_project/backEnd"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
