@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "constructor_",
+            "request": "launch",
+            "mainClass": "constructor_",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "A_classes_obj",
             "request": "launch",
             "mainClass": "A_classes_obj",

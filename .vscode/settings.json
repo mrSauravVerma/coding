@@ -11,7 +11,8 @@
         "java/DSA/leetcode",
         "java/DSA/collage _DSA",
         "java/DSA/A_array",
-        "JAVA_&_DSA_project/backEnd"
+        "JAVA_&_DSA_project/backEnd",
+        "java/DSA/collageDSA"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
