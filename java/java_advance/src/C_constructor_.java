@@ -1,9 +1,9 @@
-class constructor_ {
+class C_constructor_ {
     String name;
     int age;
 
     // Constructor
-    constructor_() {
+    C_constructor_() {
         name = "Unknown";
         age = 0;
     }
@@ -13,7 +13,7 @@ class constructor_ {
     }
 
     public static void main(String[] args) {
-        constructor_ s1 = new constructor_();  // constructor called automatically
+        C_constructor_ s1 = new C_constructor_();  // constructor called automatically
         s1.display();
     }
 }

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "first_",
+            "request": "launch",
+            "mainClass": "first_",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "practice",
+            "request": "launch",
+            "mainClass": "practice",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "constructor_",
             "request": "launch",
             "mainClass": "constructor_",
