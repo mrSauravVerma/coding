@@ -6,6 +6,314 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UnboxingDemo",
+            "request": "launch",
+            "mainClass": "UnboxingDemo",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "UnboxingDemo",
+            "request": "launch",
+            "mainClass": "UnboxingDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "AutoboxingDemo",
+            "request": "launch",
+            "mainClass": "AutoboxingDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListDemo",
+            "request": "launch",
+            "mainClass": "ArrayListDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "GenericMethodDemo",
+            "request": "launch",
+            "mainClass": "GenericMethodDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "GenericClassDemo",
+            "request": "launch",
+            "mainClass": "GenericClassDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "AWTButtonEvent",
+            "request": "launch",
+            "mainClass": "AWTButtonEvent",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "RadioButtonMessage",
+            "request": "launch",
+            "mainClass": "RadioButtonMessage",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "AWTButtonExample",
+            "request": "launch",
+            "mainClass": "AWTButtonExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "MergeFilesByteStream",
+            "request": "launch",
+            "mainClass": "MergeFilesByteStream",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "CharacterStreamExample",
+            "request": "launch",
+            "mainClass": "CharacterStreamExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "TestAnnotation",
+            "request": "launch",
+            "mainClass": "TestAnnotation",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "AnnotationExample",
+            "request": "launch",
+            "mainClass": "AnnotationExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "SyncDemo",
+            "request": "launch",
+            "mainClass": "SyncDemo",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "SyncThread",
+            "request": "launch",
+            "mainClass": "SyncThread",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "MyTask",
+            "request": "launch",
+            "mainClass": "MyTask",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "TaskThread",
+            "request": "launch",
+            "mainClass": "TaskThread",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "StringBufferExample",
+            "request": "launch",
+            "mainClass": "StringBufferExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "StringBuilderExample",
+            "request": "launch",
+            "mainClass": "StringBuilderExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "AssertionExample",
+            "request": "launch",
+            "mainClass": "AssertionExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "FinallyExample",
+            "request": "launch",
+            "mainClass": "FinallyExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "TestException",
+            "request": "launch",
+            "mainClass": "TestException",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "TestPackage",
+            "request": "launch",
+            "mainClass": "TestPackage",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "SelectionSort",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "LinearSearch",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "CountOfTwoNumbers",
+            "request": "launch",
+            "mainClass": "CountOfTwoNumbers",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "LambdaTest",
+            "request": "launch",
+            "mainClass": "LambdaTest",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "LambdaExample",
+            "request": "launch",
+            "mainClass": "LambdaExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "Box",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "SportsCar",
+            "request": "launch",
+            "mainClass": "SportsCar",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "Dog",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "GarbageExample",
+            "request": "launch",
+            "mainClass": "GarbageExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "InterfaceExample",
+            "request": "launch",
+            "mainClass": "InterfaceExample",
+            "projectName": "saurav_verma_c7516b51"
+        },
+        {
+            "type": "java",
+            "name": "InterfaceExample",
+            "request": "launch",
+            "mainClass": "InterfaceExample",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Outer",
+            "request": "launch",
+            "mainClass": "Outer",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "BalanceCheck",
+            "request": "launch",
+            "mainClass": "BalanceCheck",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "TotalAndAvgMarks",
+            "request": "launch",
+            "mainClass": "TotalAndAvgMarks",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Child",
+            "request": "launch",
+            "mainClass": "Child",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "first_",
             "request": "launch",
             "mainClass": "first_",

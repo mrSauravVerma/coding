@@ -8,11 +8,12 @@
         "java/java_Basics/src",
         "java/JAVA_PROniet/src",
         "java/JAVA_PROniet/collagePro",
+        "java/JAVA_PROniet/SAURAVverma",
         "java/DSA/leetcode",
-        "java/DSA/collage _DSA",
+        "java/DSA/collageDSA",
         "java/DSA/A_array",
         "JAVA_&_DSA_project/backEnd",
-        "java/DSA/collageDSA"
+        "java/SAURAVverma"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
