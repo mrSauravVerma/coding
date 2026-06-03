@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "b_pattern",
+            "request": "launch",
+            "mainClass": "b_pattern",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "a_digit_count",
             "request": "launch",
             "mainClass": "a_digit_count",
