@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "c_array",
+            "request": "launch",
+            "mainClass": "c_array",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "b_pattern",
             "request": "launch",
             "mainClass": "b_pattern",
