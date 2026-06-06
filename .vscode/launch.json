@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "d_methods",
+            "request": "launch",
+            "mainClass": "d_methods",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "c_array",
             "request": "launch",
             "mainClass": "c_array",
