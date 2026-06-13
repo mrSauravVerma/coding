@@ -3,7 +3,7 @@ package b_function;
 import java.util.*;
 
 public class a_void_fun_1 {
-    public static void addtion(int a, int b) {
+    public static void addtion(int a, int b) {  // addtion(parameter)
         int sum = a + b;
         System.out.print("sum of a and b = " + sum);
     }
@@ -13,7 +13,7 @@ public class a_void_fun_1 {
         System.out.print("enter the value of a and b :");
         int a = sc.nextInt();
         int b = sc.nextInt();
-        addtion(a, b);
+        addtion(a, b);  //addtion(argument);
         sc.close();
     }
 }
