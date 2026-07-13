@@ -17,7 +17,7 @@ class matheds {
     }
 }
 
-class methodOverloading {
+class e_methodOverloading {
     public static void main(String[] args) {
         matheds obj = new matheds();
         obj.fun();

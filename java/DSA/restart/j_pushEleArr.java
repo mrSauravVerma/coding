@@ -1,4 +1,4 @@
-class pushEleArr {
+class j_pushEleArr {
     public static void main(String[] args) {
         int[] arr = new int[6];
         arr[0] = 3;

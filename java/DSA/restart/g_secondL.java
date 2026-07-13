@@ -38,7 +38,7 @@ class MyClass {
 
 }
 
-public class secondL {
+public class g_secondL {
     public static void main(String args[]) {
         Scanner obj = new Scanner(System.in);
         MyClass co = new MyClass();

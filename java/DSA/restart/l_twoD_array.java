@@ -1,4 +1,4 @@
-public class twoD_array {
+public class l_twoD_array {
     public static void main(String[] args){
 
         // int [][] arr = {{1,2,3},

@@ -20,7 +20,7 @@ class calValue {
     }
 }
 
-public class minMaxArray {
+public class i_minMaxArray {
 
     public static void main(String[] args) {
 

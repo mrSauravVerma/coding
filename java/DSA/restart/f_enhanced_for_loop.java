@@ -1,5 +1,5 @@
 //  Demonstrates printing elements of an array using an enhanced for-loop.
-public class enhanced_for_loop {
+public class f_enhanced_for_loop {
 
     public static void main(String args[]) {
         int[] arr = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
