@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "secondL",
+            "request": "launch",
+            "mainClass": "secondL",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_17",
             "request": "launch",
             "mainClass": "Q_17",

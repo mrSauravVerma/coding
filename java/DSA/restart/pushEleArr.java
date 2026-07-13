@@ -6,7 +6,7 @@ class pushEleArr {
         arr[2] = 6;
         arr[3] = 7;
         
-        int pos = 3;
+        int pos = 3; // arr[2]
         int value = 50;
         int arr_size = 4;
         
