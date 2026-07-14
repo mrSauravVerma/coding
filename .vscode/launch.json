@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "New",
+            "request": "launch",
+            "mainClass": "New",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "e_methodOverloading",
+            "request": "launch",
+            "mainClass": "e_methodOverloading",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "secondL",
             "request": "launch",
             "mainClass": "secondL",
