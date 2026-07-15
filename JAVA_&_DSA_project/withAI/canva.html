@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>window["__codeletBootstrap__"] = JSON.parse('{"A":"A","B":"20260714-03-2b693f1"}');</script>
+    <script src="/_sdk/f432b76fb310b513.telemetry_sdk.js"
+        integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fira+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(99, 102, 241, 0.2);
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .nav-item.active {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: white;
+        }
+
+        .dark .nav-item:not(.active) {
+            color: #94a3b8;
+        }
+
+        .dark .nav-item:not(.active):hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: #e2e8f0;
+        }
+
+        .progress-bar {
+            transition: width 1s ease;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        body {
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .course-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+        }
+
+        .dark .course-card:hover {
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
+        }
+
+        /* Improved dark mode */
+        .dark body,
+        body.dark {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .dark .bg-white {
+            background-color: #0f172a !important;
+        }
+
+        .dark .bg-slate-50 {
+            background-color: #020617 !important;
+        }
+
+        .dark .bg-slate-100 {
+            background-color: #1e293b !important;
+            color: #e2e8f0 !important;
+        }
+
+        .dark .text-slate-800 {
+            color: #e2e8f0 !important;
+        }
+
+        .dark input,
+        .dark textarea,
+        .dark select {
+            background: #1e293b !important;
+            color: #e2e8f0 !important;
+            border-color: #475569 !important;
+        }
+
+        .dark button:not(.active):not([class*="bg-gradient"]):not([class*="bg-indigo-600"]) {
+            color: #e2e8f0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#4f46e5', accent: '#3b82f6' } } }
+        }
+    </script>
+    <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript"
+        integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+    <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript"
+        integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+</head>
+
+<body data-template-id="__page-root" class="min-h-screen bg-slate-50 text-slate-800">
+    <div class="flex w-full" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh))"><!-- Sidebar -->
+        <aside id="sidebar"
+            class="w-64 shrink-0 border-r border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4 flex flex-col gap-1 overflow-y-auto sticky top-0"
+            style="height: calc(100 * min(var(--vh, 1vh), 1vh))">
+            <div class="flex items-center gap-2 px-3 py-4 mb-4">
+                <div
+                    class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm">
+                    C
+                </div>
+                <h1 data-template-id="brand-name" class="canva-text font-bold text-lg"></h1>
+            </div><button onclick="navigate('home')"
+                class="nav-item active flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all"><i
+                    data-lucide="home" class="w-4 h-4"></i>Home</button> <button onclick="navigate('dashboard')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="layout-dashboard" class="w-4 h-4"></i>Dashboard</button> <button
+                onclick="navigate('courses')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="book-open" class="w-4 h-4"></i>All Courses</button> <button
+                onclick="navigate('mycourses')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="bookmark" class="w-4 h-4"></i>My Courses</button> <button
+                onclick="navigate('progress')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="bar-chart-3" class="w-4 h-4"></i>Progress</button> <button onclick="navigate('search')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="search" class="w-4 h-4"></i>Search</button> <button onclick="navigate('coursedetail')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="file-text" class="w-4 h-4"></i>Course Details</button> <button
+                onclick="navigate('video')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="play-circle" class="w-4 h-4"></i>Video Learning</button> <button
+                onclick="navigate('notepad')"
+                class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                    data-lucide="edit-3" class="w-4 h-4"></i>Notepad</button>
+            <div class="mt-auto pt-4 border-t border-slate-200 dark:border-slate-700 flex flex-col gap-1"><button
+                    onclick="navigate('profile')"
+                    class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                        data-lucide="user" class="w-4 h-4"></i>Profile</button> <button onclick="navigate('settings')"
+                    class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                        data-lucide="settings" class="w-4 h-4"></i>Settings</button> <button onclick="navigate('about')"
+                    class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                        data-lucide="info" class="w-4 h-4"></i>About</button> <button onclick="navigate('contact')"
+                    class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                        data-lucide="mail" class="w-4 h-4"></i>Contact</button> <button onclick="navigate('login')"
+                    class="nav-item flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100"><i
+                        data-lucide="log-in" class="w-4 h-4"></i>Login</button> <button onclick="toggleDark()"
+                    class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400"><i
+                        data-lucide="moon" class="w-4 h-4"></i>Dark Mode</button>
+            </div>
+        </aside><!-- Main Content -->
+        <main class="flex-1 overflow-y-auto p-8"><!-- HOME -->
+            <div id="page-home" class="page active fade-in">
+                <div class="max-w-5xl mx-auto">
+                    <div class="relative rounded-2xl overflow-hidden mb-10"><img data-template-id="hero-img"
+                            class="canva-image w-full h-80 object-cover" loading="lazy" alt="">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-blue-900/70 flex items-center px-12">
+                            <div>
+                                <h1 data-template-id="hero-title" class="canva-text text-white font-bold text-4xl mb-3">
+                                </h1>
+                                <p data-template-id="hero-subtitle"
+                                    class="canva-text text-blue-100 text-lg mb-6 max-w-lg"></p><button
+                                    data-template-id="hero-cta"
+                                    class="canva-button px-6 py-3 bg-white text-indigo-700 font-semibold rounded-xl hover:bg-indigo-50 transition"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 data-template-id="popular-title" class="canva-text font-bold text-2xl mb-6"></h2>
+                    <div class="grid grid-cols-3 gap-6 mb-10">
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="card-java-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5"><span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">Java</span>
+                                <h3 data-template-id="card-java-title" class="canva-text font-semibold mt-3 mb-1"></h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">42 Lessons · 12h 30m</p>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="card-dsa-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5"><span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">DSA</span>
+                                <h3 data-template-id="card-dsa-title" class="canva-text font-semibold mt-3 mb-1"></h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">56 Lessons · 18h 45m</p>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="card-frontend-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5"><span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">Frontend</span>
+                                <h3 data-template-id="card-frontend-title" class="canva-text font-semibold mt-3 mb-1">
+                                </h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">38 Lessons · 14h 20m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl p-8 dark:border-slate-700">
+                        <h2 data-template-id="stats-title" class="canva-text font-bold text-xl mb-6"></h2>
+                        <div class="grid grid-cols-4 gap-6 text-center">
+                            <div>
+                                <p class="text-3xl font-bold text-indigo-600">12K+</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Students</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-blue-600">150+</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Courses</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-indigo-600">50+</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Instructors</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-blue-600">95%</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LOGIN -->
+            <div id="page-login" class="page fade-in">
+                <div class="max-w-md mx-auto mt-16">
+                    <div class="glass rounded-2xl p-8 dark:border-slate-700">
+                        <h2 data-template-id="login-title" class="canva-text font-bold text-2xl text-center mb-2"></h2>
+                        <p data-template-id="login-subtitle" class="canva-text text-slate-500 text-center mb-8"></p>
+                        <form onsubmit="event.preventDefault(); navigate('dashboard')"><label for="login-email"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Email</label> <input
+                                id="login-email" type="email"
+                                class="w-full mt-1 mb-4 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
+                                placeholder="you@example.com"> <label for="login-pass"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Password</label> <input
+                                id="login-pass" type="password"
+                                class="w-full mt-1 mb-6 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
+                                placeholder="••••••••"> <button type="submit"
+                                class="w-full py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition">Sign
+                                In</button>
+                        </form>
+                        <p class="text-center text-sm text-slate-500 mt-6">Don't have an account? <button
+                                onclick="navigate('signup')" class="text-indigo-600 font-medium">Sign Up</button></p>
+                    </div>
+                </div>
+            </div><!-- SIGNUP -->
+            <div id="page-signup" class="page fade-in">
+                <div class="max-w-md mx-auto mt-16">
+                    <div class="glass rounded-2xl p-8 dark:border-slate-700">
+                        <h2 data-template-id="signup-title" class="canva-text font-bold text-2xl text-center mb-2"></h2>
+                        <p data-template-id="signup-subtitle" class="canva-text text-slate-500 text-center mb-8"></p>
+                        <form onsubmit="event.preventDefault(); navigate('dashboard')"><label for="signup-name"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Full Name</label> <input
+                                id="signup-name" type="text"
+                                class="w-full mt-1 mb-4 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
+                                placeholder="John Doe"> <label for="signup-email"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Email</label> <input
+                                id="signup-email" type="email"
+                                class="w-full mt-1 mb-4 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
+                                placeholder="you@example.com"> <label for="signup-pass"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Password</label> <input
+                                id="signup-pass" type="password"
+                                class="w-full mt-1 mb-6 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none"
+                                placeholder="••••••••"> <button type="submit"
+                                class="w-full py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition">Create
+                                Account</button>
+                        </form>
+                        <p class="text-center text-sm text-slate-500 mt-6">Already have an account? <button
+                                onclick="navigate('login')" class="text-indigo-600 font-medium">Sign In</button></p>
+                    </div>
+                </div>
+            </div><!-- DASHBOARD -->
+            <div id="page-dashboard" class="page fade-in">
+                <div class="max-w-5xl mx-auto">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <h1 data-template-id="dash-welcome" class="canva-text font-bold text-2xl"></h1>
+                            <p class="text-slate-500 dark:text-slate-400 mt-1">Continue where you left off</p>
+                        </div><img data-template-id="dash-avatar"
+                            class="canva-image w-12 h-12 rounded-full object-cover" loading="lazy" alt="">
+                    </div>
+                    <div class="grid grid-cols-4 gap-4 mb-8">
+                        <div class="glass rounded-xl p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Enrolled</p>
+                            <p class="text-2xl font-bold text-indigo-600 mt-1">6</p>
+                        </div>
+                        <div class="glass rounded-xl p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Completed</p>
+                            <p class="text-2xl font-bold text-green-600 mt-1">3</p>
+                        </div>
+                        <div class="glass rounded-xl p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Hours Spent</p>
+                            <p class="text-2xl font-bold text-blue-600 mt-1">87</p>
+                        </div>
+                        <div class="glass rounded-xl p-5 dark:border-slate-700">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Certificates</p>
+                            <p class="text-2xl font-bold text-purple-600 mt-1">2</p>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-4">Continue Learning</h3>
+                    <div class="space-y-4">
+                        <div class="glass rounded-xl p-5 flex items-center gap-5 dark:border-slate-700"><img
+                                data-template-id="dash-course1-img"
+                                class="canva-image w-16 h-16 rounded-lg object-cover" loading="lazy" alt="">
+                            <div class="flex-1">
+                                <h4 data-template-id="dash-course1-title" class="canva-text font-semibold"></h4>
+                                <div class="mt-2 w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-indigo-500 rounded-full progress-bar" style="width:65%"></div>
+                                </div>
+                            </div><span class="text-sm font-medium text-indigo-600">65%</span>
+                        </div>
+                        <div class="glass rounded-xl p-5 flex items-center gap-5 dark:border-slate-700"><img
+                                data-template-id="dash-course2-img"
+                                class="canva-image w-16 h-16 rounded-lg object-cover" loading="lazy" alt="">
+                            <div class="flex-1">
+                                <h4 data-template-id="dash-course2-title" class="canva-text font-semibold"></h4>
+                                <div class="mt-2 w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-blue-500 rounded-full progress-bar" style="width:40%"></div>
+                                </div>
+                            </div><span class="text-sm font-medium text-blue-600">40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ALL COURSES -->
+            <div id="page-courses" class="page fade-in">
+                <div class="max-w-5xl mx-auto">
+                    <h1 data-template-id="courses-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="flex gap-3 mb-8 flex-wrap"><button
+                            class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg">All</button>
+                        <button
+                            class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm font-medium rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition">Java</button>
+                        <button
+                            class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm font-medium rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition">DSA</button>
+                        <button
+                            class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm font-medium rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition">Frontend</button>
+                        <button
+                            class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm font-medium rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition">Backend</button>
+                        <button
+                            class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm font-medium rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition">SQL</button>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-java-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">Java</span>
+                                <h3 data-template-id="all-java-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Beginner · 42 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-java-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Rahul Sharma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-backend-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300">Backend</span>
+                                <h3 data-template-id="all-backend-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Intermediate · 35 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-backend-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Priya Patel</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-sql-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300">SQL</span>
+                                <h3 data-template-id="all-sql-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Beginner · 28 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-sql-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Rahul Sharma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-dsa-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">DSA</span>
+                                <h3 data-template-id="all-dsa-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Advanced · 56 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-dsa-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Priya Patel</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-fe-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">Frontend</span>
+                                <h3 data-template-id="all-fe-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Intermediate · 38 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-fe-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Rahul Sharma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card glass rounded-2xl overflow-hidden dark:border-slate-700"><img
+                                data-template-id="all-python-img" class="canva-image w-full h-40 object-cover"
+                                loading="lazy" alt="">
+                            <div class="p-5">
+                                <span
+                                    class="text-xs font-semibold px-2 py-1 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-300">Python</span>
+                                <h3 data-template-id="all-python-title" class="canva-text font-semibold mt-3"></h3>
+                                <p class="text-sm text-slate-500 mt-1">Beginner · 32 Lessons</p>
+                                <div class="flex items-center gap-2 mt-3">
+                                    <img data-template-id="all-python-instr"
+                                        class="canva-image w-6 h-6 rounded-full object-cover" loading="lazy"
+                                        alt=""><span class="text-xs text-slate-500">Priya Patel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- COURSE DETAIL -->
+            <div id="page-coursedetail" class="page fade-in">
+                <div class="max-w-4xl mx-auto"><img data-template-id="detail-hero"
+                        class="canva-image w-full h-56 object-cover rounded-2xl mb-6" loading="lazy" alt="">
+                    <div class="flex gap-3 mb-4"><span
+                            class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">Java</span>
+                        <span
+                            class="text-xs px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">Beginner</span>
+                    </div>
+                    <h1 data-template-id="detail-title" class="canva-text font-bold text-3xl mb-3"></h1>
+                    <p data-template-id="detail-desc"
+                        class="canva-text text-slate-500 dark:text-slate-400 mb-6 leading-relaxed"></p>
+                    <div class="flex items-center gap-4 mb-8"><img data-template-id="detail-instr-img"
+                            class="canva-image w-10 h-10 rounded-full object-cover" loading="lazy" alt="">
+                        <div>
+                            <p data-template-id="detail-instr-name" class="canva-text font-medium"></p>
+                            <p class="text-sm text-slate-500">Senior Developer · 8 yrs exp</p>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-6 dark:border-slate-700">
+                        <h3 class="font-semibold mb-4">Course Curriculum</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-indigo-50 dark:bg-indigo-900/20">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-indigo-600"></i><span
+                                    class="text-sm font-medium">1. Introduction to Java &amp; Setup</span><span
+                                    class="ml-auto text-xs text-slate-500">12:30</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-slate-400"></i><span class="text-sm">2.
+                                    Variables &amp; Data Types</span><span
+                                    class="ml-auto text-xs text-slate-500">18:45</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-slate-400"></i><span class="text-sm">3.
+                                    Control Flow &amp; Loops</span><span
+                                    class="ml-auto text-xs text-slate-500">22:10</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-slate-400"></i><span class="text-sm">4.
+                                    Object-Oriented Programming</span><span
+                                    class="ml-auto text-xs text-slate-500">35:20</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+                                <i data-lucide="lock" class="w-5 h-5 text-slate-400"></i><span
+                                    class="text-sm text-slate-400">5. Collections Framework</span><span
+                                    class="ml-auto text-xs text-slate-400">28:15</span>
+                            </div>
+                        </div>
+                    </div><button onclick="navigate('video')"
+                        class="mt-6 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition">Start
+                        Learning →</button>
+                </div>
+            </div><!-- VIDEO LEARNING -->
+            <div id="page-video" class="page fade-in">
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="col-span-2">
+                            <div
+                                class="relative rounded-2xl overflow-hidden bg-slate-900 aspect-video flex items-center justify-center">
+                                <img data-template-id="video-thumb"
+                                    class="canva-image w-full h-full object-cover opacity-60" loading="lazy" alt="">
+                                <button class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center">
+                                        <i data-lucide="play" class="w-7 h-7 text-indigo-600 ml-1"></i>
+                                    </div>
+                                </button>
+                            </div>
+                            <h2 data-template-id="video-title" class="canva-text font-bold text-xl mt-5 mb-2"></h2>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Lesson 1 of 42 · Duration: 12:30</p>
+                        </div>
+                        <div class="glass rounded-2xl p-5 dark:border-slate-700 h-fit max-h-96 overflow-y-auto">
+                            <h3 class="font-semibold mb-4">Playlist</h3>
+                            <div class="space-y-2">
+                                <div class="p-3 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 flex items-center gap-3">
+                                    <span class="text-xs font-bold text-indigo-600">01</span><span
+                                        class="text-sm font-medium">Introduction to Java</span>
+                                </div>
+                                <div
+                                    class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-3">
+                                    <span class="text-xs font-bold text-slate-400">02</span><span
+                                        class="text-sm">Variables &amp; Data Types</span>
+                                </div>
+                                <div
+                                    class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-3">
+                                    <span class="text-xs font-bold text-slate-400">03</span><span
+                                        class="text-sm">Control Flow</span>
+                                </div>
+                                <div
+                                    class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-3">
+                                    <span class="text-xs font-bold text-slate-400">04</span><span class="text-sm">OOP
+                                        Basics</span>
+                                </div>
+                                <div
+                                    class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-3">
+                                    <span class="text-xs font-bold text-slate-400">05</span><span
+                                        class="text-sm">Collections</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- NOTEPAD -->
+            <div id="page-notepad" class="page fade-in">
+                <div class="max-w-3xl mx-auto">
+                    <h1 data-template-id="notepad-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="glass rounded-2xl p-6 dark:border-slate-700">
+                        <div class="flex gap-2 mb-4"><button
+                                class="px-3 py-1 text-sm bg-slate-100 dark:bg-slate-800 rounded-lg font-medium">Java
+                                Notes</button> <button
+                                class="px-3 py-1 text-sm bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded-lg font-medium">DSA
+                                Notes</button> <button
+                                class="px-3 py-1 text-sm bg-slate-100 dark:bg-slate-800 rounded-lg font-medium">+
+                                New</button>
+                        </div><textarea id="notepad-area"
+                            class="w-full h-64 p-4 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 resize-none outline-none focus:ring-2 focus:ring-indigo-500 font-mono text-sm"
+                            placeholder="Start typing your notes here...
+
+// Binary Search Implementation
+public int binarySearch(int[] arr, int target) {
+    int left = 0, right = arr.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        else if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}"></textarea>
+                        <div class="flex justify-between items-center mt-4"><span
+                                class="text-xs text-slate-400">Auto-saved</span> <button
+                                class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition">Save
+                                Notes</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- MY COURSES -->
+            <div id="page-mycourses" class="page fade-in">
+                <div class="max-w-5xl mx-auto">
+                    <h1 data-template-id="mycourses-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="space-y-4">
+                        <div class="glass rounded-xl p-5 flex items-center gap-5 dark:border-slate-700"><img
+                                data-template-id="my-java-img" class="canva-image w-20 h-14 rounded-lg object-cover"
+                                loading="lazy" alt="">
+                            <div class="flex-1">
+                                <h4 data-template-id="my-java-title" class="canva-text font-semibold"></h4>
+                                <p class="text-sm text-slate-500 mt-1">27/42 lessons completed</p>
+                                <div class="mt-2 w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-indigo-500 rounded-full progress-bar" style="width:65%"></div>
+                                </div>
+                            </div><button onclick="navigate('video')"
+                                class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg">Continue</button>
+                        </div>
+                        <div class="glass rounded-xl p-5 flex items-center gap-5 dark:border-slate-700"><img
+                                data-template-id="my-dsa-img" class="canva-image w-20 h-14 rounded-lg object-cover"
+                                loading="lazy" alt="">
+                            <div class="flex-1">
+                                <h4 data-template-id="my-dsa-title" class="canva-text font-semibold"></h4>
+                                <p class="text-sm text-slate-500 mt-1">22/56 lessons completed</p>
+                                <div class="mt-2 w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-purple-500 rounded-full progress-bar" style="width:40%"></div>
+                                </div>
+                            </div><button onclick="navigate('video')"
+                                class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg">Continue</button>
+                        </div>
+                        <div class="glass rounded-xl p-5 flex items-center gap-5 dark:border-slate-700"><img
+                                data-template-id="my-fe-img" class="canva-image w-20 h-14 rounded-lg object-cover"
+                                loading="lazy" alt="">
+                            <div class="flex-1">
+                                <h4 data-template-id="my-fe-title" class="canva-text font-semibold"></h4>
+                                <p class="text-sm text-slate-500 mt-1">38/38 lessons completed ✅</p>
+                                <div class="mt-2 w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-green-500 rounded-full progress-bar" style="width:100%"></div>
+                                </div>
+                            </div><span
+                                class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm font-medium rounded-lg">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- PROGRESS -->
+            <div id="page-progress" class="page fade-in">
+                <div class="max-w-4xl mx-auto">
+                    <h1 data-template-id="progress-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="grid grid-cols-3 gap-4 mb-8">
+                        <div class="glass rounded-xl p-5 text-center dark:border-slate-700">
+                            <p class="text-3xl font-bold text-indigo-600">87h</p>
+                            <p class="text-sm text-slate-500 mt-1">Total Learning</p>
+                        </div>
+                        <div class="glass rounded-xl p-5 text-center dark:border-slate-700">
+                            <p class="text-3xl font-bold text-green-600">156</p>
+                            <p class="text-sm text-slate-500 mt-1">Lessons Done</p>
+                        </div>
+                        <div class="glass rounded-xl p-5 text-center dark:border-slate-700">
+                            <p class="text-3xl font-bold text-blue-600">12</p>
+                            <p class="text-sm text-slate-500 mt-1">Day Streak 🔥</p>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-6 dark:border-slate-700 mb-6">
+                        <h3 class="font-semibold mb-4">Weekly Activity</h3>
+                        <div class="flex items-end gap-3 h-32">
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-500 rounded-t" style="height:60%"></div><span
+                                    class="text-xs text-slate-500">Mon</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-500 rounded-t" style="height:80%"></div><span
+                                    class="text-xs text-slate-500">Tue</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-500 rounded-t" style="height:40%"></div><span
+                                    class="text-xs text-slate-500">Wed</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-500 rounded-t" style="height:90%"></div><span
+                                    class="text-xs text-slate-500">Thu</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-500 rounded-t" style="height:55%"></div><span
+                                    class="text-xs text-slate-500">Fri</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-400 rounded-t" style="height:30%"></div><span
+                                    class="text-xs text-slate-500">Sat</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center gap-1">
+                                <div class="w-full bg-indigo-300 rounded-t" style="height:20%"></div><span
+                                    class="text-xs text-slate-500">Sun</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-6 dark:border-slate-700">
+                        <h3 class="font-semibold mb-4">Skills Progress</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Java</span><span class="text-indigo-600">75%</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-indigo-500 rounded-full progress-bar" style="width:75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>DSA</span><span class="text-purple-600">45%</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-purple-500 rounded-full progress-bar" style="width:45%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Frontend</span><span class="text-blue-600">100%</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-blue-500 rounded-full progress-bar" style="width:100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>SQL</span><span class="text-amber-600">30%</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full">
+                                    <div class="h-2 bg-amber-500 rounded-full progress-bar" style="width:30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- SEARCH -->
+            <div id="page-search" class="page fade-in">
+                <div class="max-w-3xl mx-auto">
+                    <h1 data-template-id="search-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="relative mb-8"><i data-lucide="search"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i> <input
+                            id="search-input" type="text"
+                            class="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 focus:ring-2 focus:ring-indigo-500 outline-none text-lg"
+                            placeholder="Search courses, topics, instructors..." oninput="filterSearch()">
+                    </div>
+                    <div id="search-results" class="space-y-3">
+                        <div class="search-item flex items-center gap-4 p-4 glass rounded-xl dark:border-slate-700 cursor-pointer hover:shadow-md transition"
+                            data-tags="java beginner programming">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center">
+                                <i data-lucide="coffee" class="w-5 h-5 text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Java Programming Masterclass</h4>
+                                <p class="text-sm text-slate-500">42 lessons · Beginner</p>
+                            </div>
+                        </div>
+                        <div class="search-item flex items-center gap-4 p-4 glass rounded-xl dark:border-slate-700 cursor-pointer hover:shadow-md transition"
+                            data-tags="dsa algorithms advanced">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center">
+                                <i data-lucide="git-branch" class="w-5 h-5 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Data Structures &amp; Algorithms</h4>
+                                <p class="text-sm text-slate-500">56 lessons · Advanced</p>
+                            </div>
+                        </div>
+                        <div class="search-item flex items-center gap-4 p-4 glass rounded-xl dark:border-slate-700 cursor-pointer hover:shadow-md transition"
+                            data-tags="frontend react html css">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                                <i data-lucide="layout" class="w-5 h-5 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Modern Frontend Development</h4>
+                                <p class="text-sm text-slate-500">38 lessons · Intermediate</p>
+                            </div>
+                        </div>
+                        <div class="search-item flex items-center gap-4 p-4 glass rounded-xl dark:border-slate-700 cursor-pointer hover:shadow-md transition"
+                            data-tags="backend nodejs api server">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center">
+                                <i data-lucide="server" class="w-5 h-5 text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Backend Engineering with Node.js</h4>
+                                <p class="text-sm text-slate-500">35 lessons · Intermediate</p>
+                            </div>
+                        </div>
+                        <div class="search-item flex items-center gap-4 p-4 glass rounded-xl dark:border-slate-700 cursor-pointer hover:shadow-md transition"
+                            data-tags="sql database queries">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center">
+                                <i data-lucide="database" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">SQL &amp; Database Design</h4>
+                                <p class="text-sm text-slate-500">28 lessons · Beginner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- PROFILE -->
+            <div id="page-profile" class="page fade-in">
+                <div class="max-w-3xl mx-auto">
+                    <div class="glass rounded-2xl p-8 dark:border-slate-700 text-center mb-6"><img
+                            data-template-id="profile-avatar"
+                            class="canva-image w-24 h-24 rounded-full object-cover mx-auto mb-4" loading="lazy" alt="">
+                        <h1 data-template-id="profile-name" class="canva-text font-bold text-2xl"></h1>
+                        <p data-template-id="profile-bio" class="canva-text text-slate-500 mt-2"></p>
+                        <div class="flex justify-center gap-8 mt-6">
+                            <div>
+                                <p class="text-xl font-bold text-indigo-600">6</p>
+                                <p class="text-sm text-slate-500">Courses</p>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold text-green-600">3</p>
+                                <p class="text-sm text-slate-500">Completed</p>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold text-blue-600">2</p>
+                                <p class="text-sm text-slate-500">Certificates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-6 dark:border-slate-700">
+                        <h3 class="font-semibold mb-4">Achievements</h3>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="text-center p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20">
+                                <span class="text-2xl">🏆</span>
+                                <p class="text-xs mt-1 font-medium">First Course</p>
+                            </div>
+                            <div class="text-center p-3 rounded-xl bg-indigo-50 dark:bg-indigo-900/20">
+                                <span class="text-2xl">🔥</span>
+                                <p class="text-xs mt-1 font-medium">7-Day Streak</p>
+                            </div>
+                            <div class="text-center p-3 rounded-xl bg-green-50 dark:bg-green-900/20">
+                                <span class="text-2xl">✅</span>
+                                <p class="text-xs mt-1 font-medium">Completionist</p>
+                            </div>
+                            <div class="text-center p-3 rounded-xl bg-slate-100 dark:bg-slate-800">
+                                <span class="text-2xl opacity-30">🎯</span>
+                                <p class="text-xs mt-1 text-slate-400">Locked</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- SETTINGS -->
+            <div id="page-settings" class="page fade-in">
+                <div class="max-w-2xl mx-auto">
+                    <h1 data-template-id="settings-title" class="canva-text font-bold text-2xl mb-6"></h1>
+                    <div class="space-y-4">
+                        <div class="glass rounded-xl p-6 dark:border-slate-700">
+                            <h3 class="font-semibold mb-4">Account</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="set-name"
+                                        class="text-sm font-medium text-slate-600 dark:text-slate-300">Display
+                                        Name</label><input id="set-name" type="text" value="Arjun Mehta"
+                                        class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-indigo-500">
+                                </div>
+                                <div>
+                                    <label for="set-email"
+                                        class="text-sm font-medium text-slate-600 dark:text-slate-300">Email</label><input
+                                        id="set-email" type="email" value="arjun@example.com"
+                                        class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-indigo-500">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass rounded-xl p-6 dark:border-slate-700">
+                            <h3 class="font-semibold mb-4">Preferences</h3>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm">Dark Mode</span><button onclick="toggleDark()"
+                                    class="w-12 h-6 bg-slate-200 dark:bg-indigo-600 rounded-full relative transition"><span
+                                        class="absolute top-1 left-1 dark:left-7 w-4 h-4 bg-white rounded-full transition-all shadow"></span></button>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm">Email Notifications</span>
+                                <div class="w-12 h-6 bg-indigo-600 rounded-full relative">
+                                    <span class="absolute top-1 left-7 w-4 h-4 bg-white rounded-full shadow"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between py-2">
+                                <span class="text-sm">Course Reminders</span>
+                                <div class="w-12 h-6 bg-indigo-600 rounded-full relative">
+                                    <span class="absolute top-1 left-7 w-4 h-4 bg-white rounded-full shadow"></span>
+                                </div>
+                            </div>
+                        </div><button
+                            class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition">Save
+                            Changes</button>
+                    </div>
+                </div>
+            </div><!-- ABOUT -->
+            <div id="page-about" class="page fade-in">
+                <div class="max-w-4xl mx-auto">
+                    <h1 data-template-id="about-title" class="canva-text font-bold text-3xl mb-4"></h1>
+                    <p data-template-id="about-desc"
+                        class="canva-text text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed"></p><img
+                        data-template-id="about-team-img" class="canva-image w-full h-64 object-cover rounded-2xl mb-8"
+                        loading="lazy" alt="">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="glass rounded-xl p-6 text-center dark:border-slate-700">
+                            <span class="text-3xl">🎯</span>
+                            <h3 class="font-semibold mt-3">Our Mission</h3>
+                            <p class="text-sm text-slate-500 mt-2">Make quality tech education accessible to every
+                                student in India and beyond.</p>
+                        </div>
+                        <div class="glass rounded-xl p-6 text-center dark:border-slate-700">
+                            <span class="text-3xl">💡</span>
+                            <h3 class="font-semibold mt-3">Our Approach</h3>
+                            <p class="text-sm text-slate-500 mt-2">Project-based learning with real-world applications
+                                and hands-on coding.</p>
+                        </div>
+                        <div class="glass rounded-xl p-6 text-center dark:border-slate-700">
+                            <span class="text-3xl">🌍</span>
+                            <h3 class="font-semibold mt-3">Our Impact</h3>
+                            <p class="text-sm text-slate-500 mt-2">12,000+ students placed in top tech companies
+                                worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- CONTACT -->
+            <div id="page-contact" class="page fade-in">
+                <div class="max-w-2xl mx-auto">
+                    <h1 data-template-id="contact-title" class="canva-text font-bold text-2xl mb-2"></h1>
+                    <p data-template-id="contact-desc" class="canva-text text-slate-500 mb-8"></p>
+                    <form
+                        onsubmit="event.preventDefault(); this.reset(); document.getElementById('contact-success').classList.remove('hidden')"
+                        class="glass rounded-2xl p-8 dark:border-slate-700 space-y-4">
+                        <div>
+                            <label for="c-name"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Name</label><input
+                                id="c-name" type="text"
+                                class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-indigo-500"
+                                placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="c-email"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Email</label><input
+                                id="c-email" type="email"
+                                class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-indigo-500"
+                                placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="c-msg"
+                                class="text-sm font-medium text-slate-600 dark:text-slate-300">Message</label><textarea
+                                id="c-msg" rows="4"
+                                class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
+                                placeholder="How can we help?"></textarea>
+                        </div><button type="submit"
+                            class="w-full py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition">Send
+                            Message</button>
+                        <p id="contact-success" class="hidden text-center text-green-600 font-medium">✓ Message sent
+                            successfully!</p>
+                    </form>
+                </div>
+            </div><!-- 404 -->
+            <div id="page-404" class="page fade-in">
+                <div class="max-w-lg mx-auto text-center mt-20">
+                    <p class="text-8xl font-bold text-indigo-200 dark:text-indigo-900">404</p>
+                    <h1 data-template-id="notfound-title" class="canva-text font-bold text-2xl mt-4 mb-3"></h1>
+                    <p data-template-id="notfound-desc" class="canva-text text-slate-500 mb-8"></p><button
+                        onclick="navigate('home')"
+                        class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition">←
+                        Back to Home</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/_sdk/719055fef2a85d14.editing_sdk.js"
+        integrity="sha512-kFqrdGgIiTOsu307feB5Cy3JVP9IayftsmCIZ0csxYBGuBmJQPhyvcnmKR8F0fTW97h5s1gAvz3SumI8zJ6OxQ=="></script>
+    <script>
+        function navigate(page) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById('page-' + page);
+            if (target) target.classList.add('active'); else document.getElementById('page-404').classList.add('active');
+
+            document.querySelectorAll('.nav-item').forEach((btn, i) => {
+                btn.classList.remove('active');
+                const pages = ['home', 'dashboard', 'courses', 'mycourses', 'progress', 'search', 'coursedetail', 'video', 'notepad', 'profile', 'settings', 'about', 'contact', 'login'];
+                if (pages[i] === page) btn.classList.add('active');
+            });
+        }
+
+        function toggleDark() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('dark', document.documentElement.classList.contains('dark'));
+        }
+
+        if (localStorage.getItem('dark') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+
+        function filterSearch() {
+            const q = document.getElementById('search-input').value.toLowerCase();
+            document.querySelectorAll('.search-item').forEach(item => {
+                const tags = ((item.dataset.tags || '') + ' ' + item.textContent).toLowerCase();
+                item.style.display = tags.includes(q) ? '' : 'none';
+            });
+        }
+
+        lucide.createIcons();
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a1ae373be4d3edd1',t:'MTc4NDAwNzg2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
