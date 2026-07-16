@@ -93,7 +93,6 @@
             box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
         }
 
-        /* Improved dark mode */
         .dark body,
         body.dark {
             background: #0f172a;
@@ -142,7 +141,7 @@
 </head>
 
 <body data-template-id="__page-root" class="min-h-screen bg-slate-50 text-slate-800">
-    <div class="flex w-full" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh))"><!-- Sidebar -->
+    <div class="flex w-full" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh))">
         <aside id="sidebar"
             class="w-64 shrink-0 border-r border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-4 flex flex-col gap-1 overflow-y-auto sticky top-0"
             style="height: calc(100 * min(var(--vh, 1vh), 1vh))">
@@ -191,8 +190,8 @@
                     class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400"><i
                         data-lucide="moon" class="w-4 h-4"></i>Dark Mode</button>
             </div>
-        </aside><!-- Main Content -->
-        <main class="flex-1 overflow-y-auto p-8"><!-- HOME -->
+        </aside>
+        <main class="flex-1 overflow-y-auto p-8">
             <div id="page-home" class="page active fade-in">
                 <div class="max-w-5xl mx-auto">
                     <div class="relative rounded-2xl overflow-hidden mb-10"><img data-template-id="hero-img"
@@ -262,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- LOGIN -->
+            </div>
             <div id="page-login" class="page fade-in">
                 <div class="max-w-md mx-auto mt-16">
                     <div class="glass rounded-2xl p-8 dark:border-slate-700">
@@ -284,7 +283,7 @@
                                 onclick="navigate('signup')" class="text-indigo-600 font-medium">Sign Up</button></p>
                     </div>
                 </div>
-            </div><!-- SIGNUP -->
+            </div>
             <div id="page-signup" class="page fade-in">
                 <div class="max-w-md mx-auto mt-16">
                     <div class="glass rounded-2xl p-8 dark:border-slate-700">
@@ -310,7 +309,7 @@
                                 onclick="navigate('login')" class="text-indigo-600 font-medium">Sign In</button></p>
                     </div>
                 </div>
-            </div><!-- DASHBOARD -->
+            </div>
             <div id="page-dashboard" class="page fade-in">
                 <div class="max-w-5xl mx-auto">
                     <div class="flex items-center justify-between mb-8">
@@ -362,7 +361,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- ALL COURSES -->
+            </div>
             <div id="page-courses" class="page fade-in">
                 <div class="max-w-5xl mx-auto">
                     <h1 data-template-id="courses-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -472,7 +471,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- COURSE DETAIL -->
+            </div>
             <div id="page-coursedetail" class="page fade-in">
                 <div class="max-w-4xl mx-auto"><img data-template-id="detail-hero"
                         class="canva-image w-full h-56 object-cover rounded-2xl mb-6" loading="lazy" alt="">
@@ -528,7 +527,7 @@
                         class="mt-6 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition">Start
                         Learning →</button>
                 </div>
-            </div><!-- VIDEO LEARNING -->
+            </div>
             <div id="page-video" class="page fade-in">
                 <div class="max-w-5xl mx-auto">
                     <div class="grid grid-cols-3 gap-6">
@@ -577,7 +576,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- NOTEPAD -->
+            </div>
             <div id="page-notepad" class="page fade-in">
                 <div class="max-w-3xl mx-auto">
                     <h1 data-template-id="notepad-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -591,19 +590,7 @@
                                 New</button>
                         </div><textarea id="notepad-area"
                             class="w-full h-64 p-4 rounded-xl border border-slate-200 dark:border-slate-600 dark:bg-slate-800 resize-none outline-none focus:ring-2 focus:ring-indigo-500 font-mono text-sm"
-                            placeholder="Start typing your notes here...
-
-// Binary Search Implementation
-public int binarySearch(int[] arr, int target) {
-    int left = 0, right = arr.length - 1;
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
-        if (arr[mid] == target) return mid;
-        else if (arr[mid] < target) left = mid + 1;
-        else right = mid - 1;
-    }
-    return -1;
-}"></textarea>
+                            placeholder="Start typing your notes here..."></textarea>
                         <div class="flex justify-between items-center mt-4"><span
                                 class="text-xs text-slate-400">Auto-saved</span> <button
                                 class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition">Save
@@ -611,7 +598,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- MY COURSES -->
+            </div>
             <div id="page-mycourses" class="page fade-in">
                 <div class="max-w-5xl mx-auto">
                     <h1 data-template-id="mycourses-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -654,7 +641,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- PROGRESS -->
+            </div>
             <div id="page-progress" class="page fade-in">
                 <div class="max-w-4xl mx-auto">
                     <h1 data-template-id="progress-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -743,7 +730,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- SEARCH -->
+            </div>
             <div id="page-search" class="page fade-in">
                 <div class="max-w-3xl mx-auto">
                     <h1 data-template-id="search-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -811,7 +798,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- PROFILE -->
+            </div>
             <div id="page-profile" class="page fade-in">
                 <div class="max-w-3xl mx-auto">
                     <div class="glass rounded-2xl p-8 dark:border-slate-700 text-center mb-6"><img
@@ -856,7 +843,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- SETTINGS -->
+            </div>
             <div id="page-settings" class="page fade-in">
                 <div class="max-w-2xl mx-auto">
                     <h1 data-template-id="settings-title" class="canva-text font-bold text-2xl mb-6"></h1>
@@ -902,7 +889,7 @@ public int binarySearch(int[] arr, int target) {
                             Changes</button>
                     </div>
                 </div>
-            </div><!-- ABOUT -->
+            </div>
             <div id="page-about" class="page fade-in">
                 <div class="max-w-4xl mx-auto">
                     <h1 data-template-id="about-title" class="canva-text font-bold text-3xl mb-4"></h1>
@@ -931,7 +918,7 @@ public int binarySearch(int[] arr, int target) {
                         </div>
                     </div>
                 </div>
-            </div><!-- CONTACT -->
+            </div>
             <div id="page-contact" class="page fade-in">
                 <div class="max-w-2xl mx-auto">
                     <h1 data-template-id="contact-title" class="canva-text font-bold text-2xl mb-2"></h1>
@@ -966,7 +953,7 @@ public int binarySearch(int[] arr, int target) {
                             successfully!</p>
                     </form>
                 </div>
-            </div><!-- 404 -->
+            </div>
             <div id="page-404" class="page fade-in">
                 <div class="max-w-lg mx-auto text-center mt-20">
                     <p class="text-8xl font-bold text-indigo-200 dark:text-indigo-900">404</p>
