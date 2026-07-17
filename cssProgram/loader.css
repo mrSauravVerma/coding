@@ -9,6 +9,10 @@
     animation: loeader 2s linear infinite normal;   
 }
 
+p{
+    text-align: center;
+}    
+
 @keyframes loeader {
     form{
         rotate: 0deg;
