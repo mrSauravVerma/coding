@@ -17,4 +17,3 @@
     console.log(`print by const : ${num}`);
 }
 ///////////----
-
