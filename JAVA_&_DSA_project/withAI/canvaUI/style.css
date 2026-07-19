@@ -1,0 +1,113 @@
+* {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(99, 102, 241, 0.2);
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .nav-item.active {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: white;
+        }
+
+        .dark .nav-item:not(.active) {
+            color: #94a3b8;
+        }
+
+        .dark .nav-item:not(.active):hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: #e2e8f0;
+        }
+
+        .progress-bar {
+            transition: width 1s ease;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        body {
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .course-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+        }
+
+        .dark .course-card:hover {
+            box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
+        }
+
+        .dark body,
+        body.dark {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .dark .bg-white {
+            background-color: #0f172a !important;
+        }
+
+        .dark .bg-slate-50 {
+            background-color: #020617 !important;
+        }
+
+        .dark .bg-slate-100 {
+            background-color: #1e293b !important;
+            color: #e2e8f0 !important;
+        }
+
+        .dark .text-slate-800 {
+            color: #e2e8f0 !important;
+        }
+
+        .dark input,
+        .dark textarea,
+        .dark select {
+            background: #1e293b !important;
+            color: #e2e8f0 !important;
+            border-color: #475569 !important;
+        }
+
+        .dark button:not(.active):not([class*="bg-gradient"]):not([class*="bg-indigo-600"]) {
+            color: #e2e8f0;
+        }

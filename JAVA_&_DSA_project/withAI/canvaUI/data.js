@@ -1,0 +1,1 @@
+window["__codeletBootstrap__"] = JSON.parse('{"A":"A","B":"20260714-03-2b693f1"}');

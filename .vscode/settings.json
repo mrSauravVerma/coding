@@ -8,11 +8,12 @@
         "java/java_Basics/src",
         "java/JAVA_PROniet/src",
         "java/JAVA_PROniet/collagePro",
+        "java/DSA/restart",
         "java/DSA/leetcode",
         "java/DSA/collageDSA",
         "java/DSA/A_array",
         "JAVA_&_DSA_project/backEnd",
-        "java/DSA/restart"
+        "java"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

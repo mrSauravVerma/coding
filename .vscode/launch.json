@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleUI",
+            "request": "launch",
+            "mainClass": "SimpleUI",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "New",
             "request": "launch",
             "mainClass": "New",
