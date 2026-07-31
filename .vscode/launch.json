@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "h_stLabPro",
+            "request": "launch",
+            "mainClass": "h_stLabPro",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Data1",
+            "request": "launch",
+            "mainClass": "Data1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeManagement",
+            "request": "launch",
+            "mainClass": "EmployeeManagement",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "SimpleUI",
             "request": "launch",
             "mainClass": "SimpleUI",
