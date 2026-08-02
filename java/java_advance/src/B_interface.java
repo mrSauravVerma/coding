@@ -7,7 +7,7 @@ interface second{
     void res(int r);
 }
 
-class B_interf implements first , second {
+class B_interface implements first , second {
 
     public int cal(int a , int b){
         return a+b;
@@ -17,7 +17,7 @@ class B_interf implements first , second {
         System.out.print("A + B : "+ r);
     }
     public static void main(String[] args){
-        B_interf obj = new B_interf();
+        B_interface obj = new B_interface();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the two values : ");
         int a = sc.nextInt();

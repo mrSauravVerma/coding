@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_1",
+            "request": "launch",
+            "mainClass": "Q_1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "h_stLabPro",
             "request": "launch",
             "mainClass": "h_stLabPro",
