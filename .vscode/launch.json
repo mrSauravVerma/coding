@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSumSorted",
+            "request": "launch",
+            "mainClass": "TwoSumSorted",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_1",
             "request": "launch",
             "mainClass": "Q_1",
