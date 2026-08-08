@@ -1,0 +1,135 @@
+/* ============General Reset=========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ============Login Page=========== */
+.login_page {
+    min-height: 100vh;
+    background-color: #0b1d41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ============Login Card=========== */
+.login_card {
+    width: 360px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 4px solid #2563eb;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============Logo=========== */
+.logo {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 18px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* ============Title=========== */
+.title {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.title h1 {
+    font-size: 20px;
+    color: #0b1d41;
+    margin-bottom: 8px;
+}
+
+.title p {
+    font-size: 14px;
+    color: #718096;
+}
+
+/* ============Form=========== */
+.form_group {
+    margin-bottom: 18px;
+}
+
+.form_group label {
+    display: block;
+    font-size: 14px;
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+/* ============Input=========== */
+.form_group input {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d8e0ec;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    font-size: 14px;
+    outline: none;
+}
+
+.form_group input:focus {
+    border-color: #2563eb;
+}
+
+/* ============Password Field=========== */
+.password_field {
+    position: relative;
+}
+
+.password_field input {
+    padding-right: 45px;
+}
+
+.show_password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ============Login Button=========== */
+.login_button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login_button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ================Footer============== */
+.login_footer {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8a9ab5;
+}
