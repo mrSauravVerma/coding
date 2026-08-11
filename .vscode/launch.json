@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "a_array",
+            "request": "launch",
+            "mainClass": "accenture.a_array",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_26",
             "request": "launch",
             "mainClass": "Q_26",
