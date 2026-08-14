@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "b_twoD_array",
+            "request": "launch",
+            "mainClass": "b_twoD_array",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "heshset",
+            "request": "launch",
+            "mainClass": "DSA.heshset",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "a_array",
             "request": "launch",
             "mainClass": "accenture.a_array",
