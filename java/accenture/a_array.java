@@ -1,11 +1,18 @@
 package accenture;
 
+import java.util.Scanner;
+
 public class a_array {
-    public static void main(String[] args){
-        int[] arr =new int[2];
-        arr[0] = 2;
-        arr[1] = 3; 
-        arr[2] = 5; 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[3];
+        System.out.print("Enter values of array : ");
+        for (int i = 0; i <= 2; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i <= 2; i++) {
+            System.out.print("arr [" + i + "] : " + arr[i] + "\n");
+        }
+        sc.close();
     }
 }
-
