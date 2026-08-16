@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "heshset",
+            "request": "launch",
+            "mainClass": "DSA.C_hashmap_hashset.heshset",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "b_twoD_array",
             "request": "launch",
             "mainClass": "b_twoD_array",
