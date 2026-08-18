@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_88",
+            "request": "launch",
+            "mainClass": "Q_88",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "heshset",
             "request": "launch",
             "mainClass": "DSA.C_hashmap_hashset.heshset",
