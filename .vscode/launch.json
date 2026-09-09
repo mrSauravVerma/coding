@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "training.pattern",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "training2.pattern",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_88",
             "request": "launch",
             "mainClass": "Q_88",
