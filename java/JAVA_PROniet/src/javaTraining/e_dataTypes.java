@@ -1,3 +1,4 @@
+package javaTraining;
 import java.util.*;
 
 public class e_dataTypes {

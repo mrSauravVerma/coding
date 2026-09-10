@@ -1,4 +1,5 @@
-import java.util.*;
+package javaTraining;
+import java.util.Scanner;
 
 public class d_Take_input {
     public static void main(String[] args) {
@@ -8,6 +9,5 @@ public class d_Take_input {
         // string name = sc.nextLine(); nextLine use for input more then one word
         System.out.print("name: " + name);
         sc.close();
-
     }
 }

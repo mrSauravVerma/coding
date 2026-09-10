@@ -1,3 +1,4 @@
+package javaTraining;
 import java.util.Scanner;
 
 public class g_function {

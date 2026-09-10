@@ -1,3 +1,4 @@
+package javaTraining;
 class h_stLabPro {
     public static void main(String[] args) {
 

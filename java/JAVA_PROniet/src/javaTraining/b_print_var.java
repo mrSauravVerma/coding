@@ -1,3 +1,4 @@
+package javaTraining;
 public class b_print_var {
     public static void main(String[] args) {
         int num1 = 10;

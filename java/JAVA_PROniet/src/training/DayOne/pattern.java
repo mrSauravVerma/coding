@@ -1,4 +1,4 @@
-package training;
+package training.DayOne;
 public class pattern {
     static void sol(int n) {
         for (int i = n; i >= 1; i--) {

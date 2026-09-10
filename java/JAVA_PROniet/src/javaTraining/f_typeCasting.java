@@ -1,3 +1,4 @@
+package javaTraining;
 public class f_typeCasting {
     public static void main(String[] args) {
         int intNum = 15;

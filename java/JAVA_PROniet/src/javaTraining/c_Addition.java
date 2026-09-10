@@ -1,3 +1,4 @@
+package javaTraining;
 public class c_Addition {
     public static void main(String[] args) {
         int n1 = 12, n2 = 17;
