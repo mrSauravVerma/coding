@@ -1,5 +1,5 @@
-package training.DayOne;
-public class pattern {
+package accenture;
+public class day1 {
     static void sol(int n) {
         for (int i = n; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
