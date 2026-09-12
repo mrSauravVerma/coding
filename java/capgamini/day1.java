@@ -1,4 +1,4 @@
-package accenture;
+package capgamini;
 public class day1 {
     static void sol(int n) {
         for (int i = n; i >= 1; i--) {

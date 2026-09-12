@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "day2b",
+            "request": "launch",
+            "mainClass": "capgamini.day2b",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Day3b",
+            "request": "launch",
+            "mainClass": "capgamini.Day3b",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Day3b",
+            "request": "launch",
+            "mainClass": "accenture.Day3b",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "day3",
+            "request": "launch",
+            "mainClass": "accenture.day3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "a_hello_world",
             "request": "launch",
             "mainClass": "javaTraining.a_hello_world",

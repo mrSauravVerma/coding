@@ -1,4 +1,4 @@
-package accenture;
+package capgamini;
 
 // Sliding Window
 public class day2 {
