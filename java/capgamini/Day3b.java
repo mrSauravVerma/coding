@@ -1,36 +1,31 @@
 package capgamini;
 
-public class Day3b {
+public class day3b {
 
-    static void rotate(int[] arr, int k) {
+    static int maxSubArray(int[] arr, int size) {
 
-        int n = arr.length;
-        k = k % n; // handles k > n
+        int max = 0;
+        for (int i = 0; i < size; i++) {
 
-        for (int r = 1; r <= k; r++) {
+            for (int j = i; j < size; j++) {
+                int currentSum = 0;
 
-            int last = arr[n - 1];
-
-            for (int i = n - 1; i > 0; i--) {
-                arr[i] = arr[i - 1];
+                for (int k = i; k <= j; k++) {
+                    System.out.print(arr[k] + " ");
+                    currentSum += arr[k];
+                }
+                System.out.print("   --> " + currentSum);
+                System.out.println();
+                max = Math.max(max, currentSum);
             }
-
-            arr[0] = last;
+            System.out.println();
         }
+        return max;
     }
 
-    static void printArray(int[] arr) {
-        for (int x : arr) {
-            System.out.print(x + " ");
-        }
-    }
-
-    public static void main(String[] args) {
-
-        int[] arr = { 1, 2, 3, 4, 5 };
-        int k = 2;
-
-        rotate(arr, k);
-        printArray(arr);
+    public static void main(String args[]) {
+        int[] arr = { 2, 3, 5, 2, 3, 4 };
+        int size = arr.length;
+        System.out.print("maximum sub array : " + maxSubArray(arr, size));
     }
 }

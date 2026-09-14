@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "day1",
+            "request": "launch",
+            "mainClass": "capgamini.day1",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "day3b",
+            "request": "launch",
+            "mainClass": "capgamini.day3b",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "day3",
+            "request": "launch",
+            "mainClass": "capgamini.day3",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "day2b",
             "request": "launch",
             "mainClass": "capgamini.day2b",
