@@ -25,7 +25,7 @@ public class heshset {
             set.add(arr[i]);
         }
 
-        System.out.println("arr[1] is part of set or not : " + set.contains(arr[1])); 
+        System.out.println("arr[1] is part of set or not : " + set.contains(arr[1]));
         set.remove(100); // for remove any number into set
         set.add(200); // // for add any number into set
         System.out.println(set);

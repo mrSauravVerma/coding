@@ -20,24 +20,22 @@ public class day5 {
 
     public static void main(String args[]) {
 
-        Scanner obj = new Scanner(System.in);
+        try (Scanner obj = new Scanner(System.in)) {
+            System.out.print("Enter any number : ");
+            int n = obj.nextInt();
 
-        System.out.print("Enter any number : ");
-        int n = obj.nextInt();
+            String num = String.valueOf(n);
+            int[] arr = new int[num.length()];
 
-        String num = String.valueOf(n);
-        int[] arr = new int[num.length()];
+            for (int i = 0; i < num.length(); i++) {
+                arr[i] = num.charAt(i) - '0';
+            }
 
-        for (int i = 0; i < num.length(); i++) {
-            arr[i] = num.charAt(i) - '0';
+            for (int i = 0; i < num.length(); i++) {
+                System.out.println("Index " + i + ":" + arr[i]);
+            }
+
+            System.err.println("this number in plindrome : " + palindrome(arr));
         }
-
-        for (int i = 0; i < num.length(); i++) {
-            System.out.println("Index " + i + ":" + arr[i]);
-        }
-
-        System.err.println("this number in plindrome : " + palindrome(arr));
-
-        obj.close();
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_1524",
+            "request": "launch",
+            "mainClass": "Q_1524",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "day5",
             "request": "launch",
             "mainClass": "capgamini.day5",
