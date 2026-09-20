@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "freq",
+            "request": "launch",
+            "mainClass": "freq",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "Q_169",
+            "request": "launch",
+            "mainClass": "Q_169",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Q_1524",
             "request": "launch",
             "mainClass": "Q_1524",
