@@ -21,6 +21,7 @@ public class Q_1524 {
         return count;
     }
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
@@ -33,5 +34,6 @@ public class Q_1524 {
             arr[i] = sc.nextInt();
         }
         System.out.print("Odd sums are : " + solution(arr));
+        sc.close();
     }
 }
