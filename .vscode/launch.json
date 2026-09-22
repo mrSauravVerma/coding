@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "newPro",
+            "request": "launch",
+            "mainClass": "newPro",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "n_two_pointer",
             "request": "launch",
             "mainClass": "n_two_pointer",

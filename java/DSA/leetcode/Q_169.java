@@ -16,7 +16,7 @@ public class Q_169 {
         }
         return -1;
     }
-
+ 
     // majority Element
     static int solution2(int[] arr) {
         Arrays.sort(arr);
