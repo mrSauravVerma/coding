@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q_2965",
+            "request": "launch",
+            "mainClass": "Q_2965",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "newPro",
             "request": "launch",
             "mainClass": "newPro",
