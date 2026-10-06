@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rotate_arrray",
+            "request": "launch",
+            "mainClass": "capgamini.rotate_arrray",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
+            "name": "jump",
+            "request": "launch",
+            "mainClass": "capgamini.jump",
+            "projectName": "coding_50b18b23"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
