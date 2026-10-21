@@ -18,11 +18,13 @@ class Solution {
         while (i < arr.length / 2) {
             if (arr[i] + arr[j] == t) {
                 return new int[] { i, j };
+            } else if (arr[i] + arr[j] > t) {
+                i++;
+            } else {
+                j--;
             }
-            i++;
-            j--;
         }
-        return new int[] {0,0};
+        return new int[] { 0, 0 };
     }
 }
 
